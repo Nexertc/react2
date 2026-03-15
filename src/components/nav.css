@@ -1,0 +1,18 @@
+.navigasi{
+    background: linear-gradient(80deg, #454afa, 85%, white);
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.text{
+    margin: 0;
+}
+
+.nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
