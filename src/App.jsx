@@ -4,12 +4,13 @@ import "./components/nav.css";
 import { useNavigate } from "react-router-dom";
 import App2 from "./App2";
 import Button from "./components/button";
-import ardeva from "./img/ardeva.png";
+import ardeva from "./img/coc3.webp";
 import clan from "./img/clan3.png";
 import ig from "./img/ig.png";
 import github from "./img/github.png";
 import yt from "./img/yt.png";
 import tiktok from "./img/tiktokrm.png";
+import nxc from "./img/nxc2.png";
 
 function App(){
 
@@ -24,9 +25,17 @@ return(
  
 <div className="cns"> 
   <div className="imgd1">
-    <img className="img1" src={ardeva} alt="Ardeva" />
+
+    <div className="imglz">
+   <div className="img1">
+     <h2 className="h2img1">Nexertc</h2>
+   </div>
+      <img className="nxc" src={nxc} alt="nxc" />
+      <div className="overlay"></div>
+      </div>
+
    <Button 
-  teks="Tentang Saya v"
+  teks="Tentang Saya"
   className="btnabout"
 />
   </div>

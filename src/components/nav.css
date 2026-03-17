@@ -16,3 +16,15 @@
     position: fixed;
     top: 0;
 }
+
+@media (max-width: 768px) {
+
+
+    .navigasi{
+        height: 15vw;
+    }
+
+    .text{
+        font-size: 1.5rem;
+    }
+}
