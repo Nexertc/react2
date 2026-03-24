@@ -1,20 +1,42 @@
 .navigasi{
     background: linear-gradient(80deg, #454afa, 85%, white);
-    height: 5vw;
+    height: 7vw;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    z-index: 1001;
 }
 
-.text{
-    margin: 0;
-}
 
 .nav{
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1001;
+}
+
+.link1{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 1vw;
+    font-weight: 500;
+}
+.containerlink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10vw;
+}
+
+.nxcnav{
+ height: 80%;
+ width: auto;
+ border-radius: 0.5vw;
+ position: absolute;
+ right: 2vw;
 }
 
 @media (max-width: 768px) {
@@ -24,7 +46,18 @@
         height: 15vw;
     }
 
-    .text{
-        font-size: 1.5rem;
+    .nxcnav{
+        border-radius: 1.5vw;
+        height: 90%;
     }
+
+    .containerlink{
+       gap: 3vw;
+       right: 18vw;
+    }
+
+    .blog{
+        display: none;
+    }
+    
 }

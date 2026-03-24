@@ -1,3 +1,4 @@
+import {useState} from "react";
 import "./App.css";
 import Nav from "./components/nav";
 import "./components/nav.css";
@@ -16,11 +17,16 @@ function App(){
 
 const navigate = useNavigate();
 
+const [showPopup, setShowPopup] = useState(false);
+
+function klikmedia(){
+  setShowPopup(!showPopup);
+}
+
 return(
 <div className="konten">
   <Nav 
   class1= "navigasi"
-  class2 ="text"
   />
  
 <div className="cns"> 
@@ -43,9 +49,21 @@ return(
 <Button 
   teks="Kunjungi media"
   className="btnabout btnmedia"
+  tujuan={klikmedia}
 />
 
+
 </div>
+
+
+{showPopup && 
+  <div className="popup"> </div>
+  
+}
+
+{showPopup &&
+<div onClick={klikmedia} className="overlaypopup"></div>
+}
 
 
   </div>
