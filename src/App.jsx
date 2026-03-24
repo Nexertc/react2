@@ -34,10 +34,20 @@ return(
       <div className="overlay"></div>
       </div>
 
+<div className="containerbtn">
    <Button 
   teks="Tentang Saya"
   className="btnabout"
 />
+
+<Button 
+  teks="Kunjungi media"
+  className="btnabout btnmedia"
+/>
+
+</div>
+
+
   </div>
  
 <div className="des">

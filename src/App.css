@@ -107,13 +107,38 @@ body{
     gap: 1vw;
 }
 
+
+
+.containerbtn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .btnabout{
  background: linear-gradient(80deg, #454afa, 85%, white);
 border: 0.2vw solid gold;
 padding: 1vw;
 margin-top: 0.5vw;
 width: 100%;
+border-radius: 0.5vw;
+color: white;
 }
+
+.btnmedia{
+    background: none;
+    color: black;
+    transition: 0.6s;
+}
+
+.btnmedia:hover{
+   background: linear-gradient(80deg, #454afa, 85%, white);
+    color: white;
+    border: 0.2vw solid gold;
+}
+
 
 @media (max-width: 768px) {
     .img1{
@@ -143,15 +168,26 @@ width: 100%;
         top: 5vw;
     }
 
+    .containerbtn{
+        flex-direction: row;
+         position: absolute;
+        top: 77vw;
+        gap: 3vw;
+    }
+
     .btnabout{
         border: 0.35vw solid white;
-        padding: 4vw;
+        padding: 3.5vw;
         margin-top: 3vw;
-        border-radius: 1vw;
-        position: absolute;
-        top: 77vw;
-        width: 50%;
+        border-radius: 1vw;     
+        width: 35%;
         background: #4e95ff;
+        color: white;
+    }
+    .btnmedia{
+        background: none;
+        border: 0.35vw solid white;
+        color: white;
     }
 
     .imgd1{
@@ -183,4 +219,6 @@ width: 100%;
         gap: 5vw;
     }
     
+    
+
 }
