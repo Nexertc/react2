@@ -14,8 +14,6 @@ body{
 
 .img1{
     width: 100%;
-    border-bottom: 0.2vw solid gold;
-    border-radius: 0.7vw;
     height: 20vw;
     background-image: url('../src/img/coc3.webp');
     background-position: center;
@@ -24,6 +22,7 @@ body{
     align-items: center;
     justify-content: center;   
     flex-direction: column;
+    border-radius: 0.7vw;
 }
 
 .h2img1{
@@ -173,6 +172,7 @@ z-index: 999;
         height: 100vw;
         background-position: center;
         background-size: cover;
+        border-radius: 0;
     }
 
 
