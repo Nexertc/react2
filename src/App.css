@@ -14,7 +14,7 @@ body{
 
 .img1{
     width: 100%;
-    border: 0.2vw solid gold;
+    border-bottom: 0.2vw solid gold;
     border-radius: 0.7vw;
     height: 20vw;
     background-image: url('../src/img/coc3.webp');
@@ -127,6 +127,7 @@ margin-top: 0.5vw;
 width: 100%;
 border-radius: 0.5vw;
 color: white;
+z-index: 999;
 }
 
 .btnmedia{
