@@ -25,6 +25,7 @@ function klikmedia(){
 
 return(
 <div className="konten">
+  <header>
   <Nav 
   class1= "navigasi"
   />
@@ -51,22 +52,11 @@ return(
   className="btnabout btnmedia"
   tujuan={klikmedia}
 />
-
-
 </div>
 
 
-{showPopup && 
-  <div className="popup"> </div>
-  
-}
-
-{showPopup &&
-<div onClick={klikmedia} className="overlaypopup"></div>
-}
-
-
   </div>
+  
  
 <div className="des">
    <h3>Ardeva Alghifari</h3>
@@ -85,10 +75,17 @@ website. Website ini saya buat menggunakan
 <img className="img2" src={yt} alt="yt" />
 <img className="img2" src={tiktok} alt="tiktok" />
 </div>
-
 </div> {/* classname des */ }
-
 </div>   {/* classname cns */ }
+</header>
+
+{showPopup && 
+  <div className="popup"> </div>
+}
+
+{showPopup &&
+<div onClick={klikmedia} className="overlaypopup"></div>
+}
 
 </div>  // <---  classname konten
 );
