@@ -12,6 +12,7 @@ import github from "./img/github.png";
 import yt from "./img/yt.png";
 import tiktok from "./img/tiktokrm.png";
 import nxc from "./img/nxc2.png";
+import Section1 from "./components/section/Section1";
 
 function App(){
 
@@ -86,6 +87,8 @@ website. Website ini saya buat menggunakan
 {showPopup &&
 <div onClick={klikmedia} className="overlaypopup"></div>
 }
+
+<Section1 />
 
 </div>  // <---  classname konten
 );
