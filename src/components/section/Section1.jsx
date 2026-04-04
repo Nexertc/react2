@@ -11,7 +11,7 @@ export default function Section1() {
   return (
     <div className="konten">
       <article>
-        <h2 align="center">Hal hal yang saya pelajari</h2>
+        <h2 className="heading2" >Hal hal yang saya pelajari</h2>
         <section className="imgdes1">
           <div className="imgdes2">
             <img className="imgs1" src={html5} alt="html5" />
