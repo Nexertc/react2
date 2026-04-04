@@ -1,26 +1,29 @@
-.imgdes1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5vw;
-    gap: 2vw;
+.imgdes1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vw;
+  margin-bottom: 5vw;
+  gap: 3vw;
+  width: 95%;
 }
 
-.imgdes2{
-    width: 35%;
+.imgdes2 {
+  width: 35%;
 }
-.imgs1{
-    width: 100%;
-    border-radius: 0.7vw;
+.imgs1 {
+  height: 16vw;
+  width: 100%;
+  border-radius: 0.7vw;
 }
-.heading3{
-    font-size: 1.5rem;
-    text-align: center;
-    color: #4e95ff;
-    margin-bottom: 1vw;
+.heading3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #4e95ff;
+  margin-bottom: 1vw;
 }
-.paragraft1{
-    text-align: center;
-    margin: 0;
-    font-size: 1.1rem;
+.paragraft1 {
+  text-align: center;
+  margin: 0;
+  font-size: 1.1rem;
 }

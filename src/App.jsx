@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import "./App.css";
 import Nav from "./components/nav";
 import "./components/nav.css";
@@ -14,84 +14,67 @@ import tiktok from "./img/tiktokrm.png";
 import nxc from "./img/nxc2.png";
 import Section1 from "./components/section/Section1";
 
-function App(){
+function App() {
+  const navigate = useNavigate();
 
-const navigate = useNavigate();
+  const [showPopup, setShowPopup] = useState(false);
 
-const [showPopup, setShowPopup] = useState(false);
+  function klikmedia() {
+    setShowPopup(!showPopup);
+  }
 
-function klikmedia(){
-  setShowPopup(!showPopup);
-}
+  return (
+    <div className="konten">
+      <header>
+        <Nav class1="navigasi" />
+        <div className="cns">
+          <div className="imgd1">
+            <div className="imglz">
+              <div className="img1">
+                <h2 className="h2img1">Nexertc</h2>
+              </div>
+              <img className="nxc" src={nxc} alt="nxc" />
+              <div className="overlay"></div>
+            </div>
 
-return(
-<div className="konten">
-  <header>
-  <Nav 
-  class1= "navigasi"
-  />
- 
-<div className="cns"> 
-  <div className="imgd1">
+            <div className="containerbtn">
+              <Button teks="Tentang Saya" className="btnabout" />
 
-    <div className="imglz">
-   <div className="img1">
-     <h2 className="h2img1">Nexertc</h2>
-   </div>
-      <img className="nxc" src={nxc} alt="nxc" />
-      <div className="overlay"></div>
-      </div>
+              <Button
+                teks="Kunjungi media"
+                className="btnabout btnmedia"
+                tujuan={klikmedia}
+              />
+            </div>
+          </div>
+          <div className="des">
+            <h3>Ardeva Alghifari</h3>
+            <p>
+              Asalammualaikum wr wb. perkenalkan nama saya adalah Ardeva
+              Alghifari, saya adalah seorang pelajar di Smk Geo Informatika,
+              saya membuat website ini sebagai contoh dari hasil karya saya
+              dalam membuat website. Website ini saya buat menggunakan
+            </p>
 
-<div className="containerbtn">
-   <Button 
-  teks="Tentang Saya"
-  className="btnabout"
-/>
+            <div className="imgd2">
+              <img className="img2" src={clan} alt="clan" />
+              <img className="img2" src={ig} alt="ig" />
+              <img className="img2" src={github} alt="github" />
+              <img className="img2" src={yt} alt="yt" />
+              <img className="img2" src={tiktok} alt="tiktok" />
+            </div>
+          </div>{" "}
+          {/* classname des */}
+        </div>{" "}
+        {/* classname cns */}
+      </header>
 
-<Button 
-  teks="Kunjungi media"
-  className="btnabout btnmedia"
-  tujuan={klikmedia}
-/>
-</div>
+      {showPopup && <div className="popup"> </div>}
+      {showPopup && <div onClick={klikmedia} className="overlaypopup"></div>}
 
-
-  </div>
-  
- 
-<div className="des">
-   <h3>Ardeva Alghifari</h3>
-   <p>
-    Asalammualaikum wr wb. perkenalkan      nama saya
-adalah Ardeva Alghifari, saya adalah seorang pelajar 
-di Smk Geo Informatika, saya membuat    website ini 
-sebagai contoh dari hasil karya saya dalam membuat 
-website. Website ini saya buat menggunakan
-   </p>
-
-<div className="imgd2">
-<img className="img2" src={clan} alt="clan" />
-<img className="img2" src={ig} alt="ig" />
-<img className="img2" src={github} alt="github" />
-<img className="img2" src={yt} alt="yt" />
-<img className="img2" src={tiktok} alt="tiktok" />
-</div>
-</div> {/* classname des */ }
-</div>   {/* classname cns */ }
-</header>
-
-{showPopup && 
-  <div className="popup"> </div>
-}
-
-{showPopup &&
-<div onClick={klikmedia} className="overlaypopup"></div>
-}
-
-<Section1 />
-
-</div>  // <---  classname konten
-);
+      <Section1 />
+    </div> // <---  classname konten
+  );
 }
 
 export default App;

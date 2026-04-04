@@ -4,6 +4,13 @@ body{
     font-family: Arial, sans-serif;
 }
 
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .konten{
     min-height: 100vh;
     display: flex;
@@ -97,7 +104,9 @@ body{
     text-align: justify;
 }
 
-
+.des p{
+    text-indent: 1.5rem;
+}
 
 .cnsbtn{
     display: flex;
