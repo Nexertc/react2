@@ -40,25 +40,29 @@
         justify-content: center;
         gap: 2vw;
         width: 100%;
+        margin-bottom: 0;
+        margin-top: 0;
     }
     
     .imgdes2 {
-        width: 80%;
+        width: 90%;
         margin-bottom: 13vw;
     }
     
     .imgs1 {
         height: auto;
         width: 100%;
-        border-radius: 2vw;
+
     }
 
     .heading2{
         margin-top: 30vw;
         font-size: 1.2rem;
+        margin-bottom: 6vw;
     }
 
     .heading3{
         margin-top: 2vw;
+        font-size: 1.3rem;
     }
 }

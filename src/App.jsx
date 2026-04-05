@@ -13,6 +13,7 @@ import yt from "./img/yt.png";
 import tiktok from "./img/tiktokrm.png";
 import nxc from "./img/nxc2.png";
 import Section1 from "./components/section/Section1";
+import Footer from "./components/footer";
 
 function App() {
   const navigate = useNavigate();
@@ -73,6 +74,8 @@ function App() {
       {showPopup && <div onClick={klikmedia} className="overlaypopup"></div>}
 
       <Section1 />
+    
+      <Footer />
     </div> // <---  classname konten
   );
 }
