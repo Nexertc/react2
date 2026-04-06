@@ -28,11 +28,11 @@ export default function Footer() {
 
    
  <div className="deslink end">
-     <a href="">Blog</a>
-        <a href="">About</a>
-        <a href="">HTML</a>
-        <a href="">CSS</a>
-        <a href="">JavaScript</a>
+     <a href="">React</a>
+        <a href="">Figma</a>
+        <a href="">Website</a>
+        <a href="">Project</a>
+        <a href="">Riwayat Pendidikan</a>
    </div>
 
    </div>

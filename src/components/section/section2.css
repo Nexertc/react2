@@ -1,0 +1,66 @@
+.konten2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10vw;
+}
+
+.desection2 {
+  display: flex;
+  width: 90%;
+}
+
+.figureimg1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 0.15vw solid #4e95ff;
+  padding: 1vw;
+  border-radius: 0.7vw;
+}
+
+.figureimg1 img {
+  width: auto;
+  height: 15vw;
+}
+
+.figureimg1 p{
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.h4section2 {
+  font-family:Arial, Helvetica, sans-serif ;
+ font-size: 1.5rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+.desection2{  
+  align-items: center;
+  justify-content: center;
+}
+.figureimg1{
+  width: 70%;
+  border: none;
+  margin: 1vw;
+}
+
+.figureimg1 img {
+  height: 20vw;
+}
+
+.figureimg1 p{
+  font-size: 0.8rem;
+}
+
+
+}
