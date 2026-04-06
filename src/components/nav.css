@@ -48,7 +48,7 @@
 
     .nxcnav{
         border-radius: 1.5vw;
-        height: 90%;
+        height: 85%;
     }
 
     .containerlink{
@@ -60,4 +60,8 @@
         display: none;
     }
     
+    .link1{
+        font-size: 1.1rem;
+    }
+
 }

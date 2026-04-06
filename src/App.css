@@ -106,6 +106,9 @@ article{
     justify-content: center;
     width: 28%;
     text-align: justify;
+   border: 0.15vw solid #4e95ff;
+   padding: 2vw;
+   border-radius: 0.7vw;
 }
 
 .des p{

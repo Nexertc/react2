@@ -16,7 +16,7 @@
 
 .hr1{
     border: 0.1vw solid #4e95ff;
-    width: 99.9%;
+    width: 99%;
 }
 
 .deslink1{
@@ -40,7 +40,7 @@
 .deslink a{
     color: white;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
     text-align: left;
@@ -66,7 +66,7 @@
     }
 
     .deslink a{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
 }

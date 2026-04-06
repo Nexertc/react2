@@ -51,10 +51,10 @@ function App() {
           <div className="des">
             <h3>Ardeva Alghifari</h3>
             <p>
-              Asalammualaikum wr wb. perkenalkan nama saya adalah Ardeva
-              Alghifari, saya adalah seorang pelajar di Smk Geo Informatika,
-              saya membuat website ini sebagai contoh dari hasil karya saya
-              dalam membuat website. Website ini saya buat menggunakan
+             Website Ardeva Alghifari seorang pelajar dari sekolah SMK Geo Informatika, dan 
+             lulusan dari SMP Negeri 01 Dramaga
+              lahir pada 28 mei 2009 di Sragen Jawa Tengah. 
+              Jika ada keperluan dengan saya bisa kunjungi media sosial saya di bawah ini.
             </p>
 
             <div className="imgd2">
@@ -64,10 +64,10 @@ function App() {
               <img className="img2" src={yt} alt="yt" />
               <img className="img2" src={tiktok} alt="tiktok" />
             </div>
-          </div>{" "}
-          {/* classname des */}
-        </div>{" "}
-        {/* classname cns */}
+           
+
+          </div> {/* classname des */}
+        </div> {/* classname cns */}
       </header>
 
       {showPopup && <div className="popup"> </div>}
