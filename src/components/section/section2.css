@@ -36,11 +36,58 @@ font-family:inherit;
 
 .h4section2 {
  font-family:unset;
- font-size: 1.5rem;
+ font-size: 1.2rem;
  background: #4e95ff;
  color: white;
- padding: 2vw;
+ padding: 1.5vw;
  border-radius: 0.7vw;
+}
+
+
+.section2v{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  margin-bottom: 5vw;
+  background-image: url(../../img/bg15.jpeg);
+  height: 30vw;
+  background-size: cover;
+  border-top: 0.3vw solid gold;
+  border-bottom: 0.3vw solid gold;
+}
+
+.nxcsection2{
+  width: 15%;
+  border: 0.2vw solid gold;
+  border-radius: 2vw;
+}
+
+.des2v{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.des2v p{
+  font-size: 1.5rem;
+  font-family:inherit;
+  text-align: center;
+  color: white;
+  width: 60%;
+}
+
+.des2v button{
+  padding: 1.5vw;
+  border: 0.2vw solid gold;
+  background: white;
+  color: white;
+  width: 50%;
+  border-radius: 0.5vw;
+  font-size: 1.2rem;
+  color: black;
 }
 
 
@@ -69,5 +116,37 @@ font-family:inherit;
   border-radius: 2vw;
 }
 
+.section2v{
+  height: 60vw;
+}
+
+
+.nxcsection2{
+  width: 25%;
+  border: 0.2vw solid gold;
+  border-radius: 2vw;
+  margin-left: 4vw;
+}
+
+
+.des2v p{
+  font-size: 1rem;
+  font-family:inherit;
+  text-align: center;
+  color: white;
+  width: 90%;
+}
+
+
+.des2v button{
+  padding: 2vw;
+  border: 0.5vw solid gold;
+  background: white;
+  color: white;
+  width: 60%;
+  border-radius: 1vw;
+  font-size: 1rem;
+  color: black;
+}
 
 }

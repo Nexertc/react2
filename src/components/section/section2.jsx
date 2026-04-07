@@ -2,12 +2,23 @@ import "./section2.css";
 import babakan from "../../img/babakan.jpg";
 import sadar from "../../img/sadar.jpg";
 import geoinformatika from "../../img/geoinformatika.webp";
+import nxc from "../../img/nxc.png";
 
 export default function Section2() {
   return (
     <div className="konten2">
-      <h4 className="h4section2">Riwayat Pendidikan</h4>
 
+      <section className="section2v">
+        <img className="nxcsection2" src={nxc} alt="nxc" />
+         <div className="des2v">
+          <p>Website Ardeva Alghifari temukan inspirasi
+             atau kebutuhan anda sekarang</p>
+          <button>Click Here</button>
+         </div>
+
+      </section>
+
+      <h4 className="h4section2">Riwayat Pendidikan</h4>
       <section className="desection2">
         <figure className="figureimg1">
           <img src={babakan} alt="Babakan" />

@@ -74,7 +74,6 @@ article{
     align-items: center;
     justify-content: center;
     width: 30%;
-    height: 28vw;
 }
 
 .imgd2{
@@ -89,7 +88,7 @@ article{
 .cns{
     width: 100%;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     gap: 3vw;
 }
@@ -105,17 +104,16 @@ article{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 28%;
+    width: 30%;
     text-align: justify;
    border: 0.15vw solid #4e95ff;
-   padding-left: 2vw;
-   padding-right:2vw ;
+   padding: 2vw;
    border-radius: 0.7vw;
-   height: 28vw;
 }
 
 .des p{
     text-indent: 1.5rem;
+    font-size: 1rem;
 }
 
 .cnsbtn{
@@ -247,7 +245,6 @@ z-index: 999;
     .imgd1{
         width: 100%;
         margin-top: 8vw;
-        height: auto;
     }
 
     .cns{
@@ -267,8 +264,6 @@ z-index: 999;
         width: 80%;
         margin-top: 5vw;
         border: none;
-        margin: 2vw;
-        height: auto;
     }
 
     .cnsbtn{

@@ -17,7 +17,7 @@ import Footer from "./components/footer";
 import Section2 from "./components/section/section2";
 
 
-function App() {
+export default function App() {
   const navigate = useNavigate();
 
   const [showPopup, setShowPopup] = useState(false);
@@ -82,5 +82,3 @@ function App() {
     </div> // <---  classname konten
   );
 }
-
-export default App;
