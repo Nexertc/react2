@@ -74,6 +74,7 @@ article{
     align-items: center;
     justify-content: center;
     width: 30%;
+    height: 28vw;
 }
 
 .imgd2{
@@ -107,8 +108,10 @@ article{
     width: 28%;
     text-align: justify;
    border: 0.15vw solid #4e95ff;
-   padding: 2vw;
+   padding-left: 2vw;
+   padding-right:2vw ;
    border-radius: 0.7vw;
+   height: 28vw;
 }
 
 .des p{
@@ -244,6 +247,7 @@ z-index: 999;
     .imgd1{
         width: 100%;
         margin-top: 8vw;
+        height: auto;
     }
 
     .cns{
@@ -263,6 +267,8 @@ z-index: 999;
         width: 80%;
         margin-top: 5vw;
         border: none;
+        margin: 2vw;
+        height: auto;
     }
 
     .cnsbtn{

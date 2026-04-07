@@ -30,16 +30,18 @@
 
 .figureimg1 p{
   font-size: 1.2rem;
-  font-family: Arial, Helvetica, sans-serif;
+font-family:inherit;
   text-align: center;
 }
 
 .h4section2 {
-  font-family:Arial, Helvetica, sans-serif ;
+ font-family:unset;
  font-size: 1.5rem;
+ background: #4e95ff;
+ color: white;
+ padding: 2vw;
+ border-radius: 0.7vw;
 }
-
-
 
 
 @media (max-width: 768px) {
@@ -60,6 +62,11 @@
 
 .figureimg1 p{
   font-size: 0.8rem;
+}
+
+.h4section2{
+  padding: 3vw;
+  border-radius: 2vw;
 }
 
 
