@@ -11,7 +11,7 @@ export default function Footer() {
  
  <div className="deslink1">
    <div className="deslink">
-     <a href="">Blog</a>
+     <a href="https://ardevaalghifari.blogspot.com/">Blog</a>
         <a href="">About</a>
         <a href="">HTML</a>
         <a href="">CSS</a>
@@ -19,10 +19,10 @@ export default function Footer() {
    </div>
 
  <div className="deslink">
-     <a href="">GitHub</a>
-        <a href="">YouTUbe</a>
-        <a href="">Instragram</a>
-        <a href="">TikTok</a>
+     <a href="https://github.com/Nexertc">GitHub</a>
+        <a href="https://www.youtube.com/@beabandipr_19jt?si=lC3ickwYRK6a4w3L">YouTTube</a>
+        <a href="https://www.instagram.com/avealgh?igsh=MTc5Z2dtMWtkMzFsbQ==">Instagram</a>
+        <a href="https://www.tiktok.com/@nexertc?_r=1&_t=ZS-91lu3QryLqh">TikTok</a>
         <a href="">Bloger</a>
    </div>
 

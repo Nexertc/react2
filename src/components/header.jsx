@@ -19,6 +19,7 @@ import "../components/nav.css";
 
   function klikmedia() {
     setShowPopup(!showPopup);
+    document.body.style.overflow = showPopup ? "auto" : "hidden";
   }
 return(
     <div>
