@@ -93,6 +93,10 @@ font-family:inherit;
 
 @media (max-width: 768px) {
 
+  .konten2{
+    margin-top: 15vw;
+  }
+
 .desection2{  
   align-items: center;
   justify-content: center;
@@ -114,6 +118,7 @@ font-family:inherit;
 .h4section2{
   padding: 3vw;
   border-radius: 2vw;
+  margin-top: 15vw;
 }
 
 .section2v{
