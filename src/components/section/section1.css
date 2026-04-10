@@ -1,7 +1,7 @@
 .imgdes1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 3vw;
+ 
   margin-bottom: 5vw;
   gap: 3vw;
   width: 90%;
@@ -28,19 +28,29 @@
   text-align: center;
   color: #4e95ff;
   margin-bottom: 1vw;
- font-family: monospace;
+  font-family:unset;
 }
 .paragraft1 {
-  font-family:inherit;
+  font-family:unset;
   text-align: center;
   margin: 0;
   font-size: 1.1rem;
 }
 
 .heading2{
-    text-align: center;
     font-family:unset;
+ font-size: 1.2rem;
+ background: #4e95ff;
+ color: white;
+ padding: 1.5vw;
+ border-radius: 0.7vw;
+}
 
+.h4sec1{
+    font-family:unset;
+    font-size: 1.5rem;
+    margin-bottom: 1vw;
+    margin-top: 3vw;
 }
 
 
@@ -63,14 +73,30 @@
       height: 28vw;
     }
 
+    .paragraft1{
+      font-size: 1/1rem;
+    }
+
     .heading2{
-        margin-top: 30vw;
+        margin-top: 20vw;
         font-size: 1.2rem;
         margin-bottom: 6vw;
+        padding: 3vw;
+  border-radius: 2vw;
+  
     }
 
     .heading3{
         margin-top: 2vw;
         font-size: 1.3rem;
     }
+
+    
+.h4sec1{
+    font-size: 1.5rem;
+    margin-bottom: 3vw;
+    margin-top: 5vw;
+    
+}
+
 }

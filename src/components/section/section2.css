@@ -90,8 +90,67 @@ font-family:inherit;
   color: black;
 }
 
+.box1s2{
+ width: 80%;
+ border: 0.2vw solid #2b247c;
+ padding: 2vw;
+  margin-bottom: 5vw;
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 0.7vw;
+}
+
+.box2s2{
+  display: flex;
+  gap: 1vw;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.pglink{
+  background:#454afa;
+  color: white;
+  margin: 0;
+  padding: 0.8vw;
+  border-radius: 0.7vw;
+ 
+}
+
+.boxh3{
+ font-family:unset;
+ font-size: 1.4rem;
+ border-bottom: 0.2vw solid #4e95ff;
+ width: 100%;
+ padding-bottom: 3vw;
+}
+
 
 @media (max-width: 768px) {
+
+  .box1s2{
+    padding: 3vw;
+    gap: 3vw;
+    width: 90%;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+  }
+
+  .box2s2{
+    gap: 3vw;
+  }
+
+  .boxh3{
+    border-bottom: 0.4vw solid #4e95ff;
+  }
+
+.pglink{
+  font-size: 0.9rem;
+  padding: 1.7vw;
+  border-radius: 3vw;
+}
 
   .konten2{
     margin-top: 15vw;

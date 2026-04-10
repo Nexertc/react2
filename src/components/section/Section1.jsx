@@ -11,7 +11,9 @@ export default function Section1() {
   return (
     <div className="konten">
       <article>
-        <h2 className="heading2" >Hal hal yang saya pelajari</h2>
+        <h2 className="heading2" >Hal hal yang sudah saya pelajari</h2>
+
+        <h4 className="h4sec1">Basic</h4>
         <section className="imgdes1">
           <div className="imgdes2">
             <img className="imgs1" src={html5} alt="html5" />
@@ -31,6 +33,10 @@ export default function Section1() {
             <p className="paragraft1">Java Script</p>
           </div>
 
+        </section>
+
+        <section className="imgdes1">
+          
             <div className="imgdes2">
             <img className="imgs1" src={twebsite} alt="website" />
             <h3 className="heading3">Website</h3>
