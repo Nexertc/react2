@@ -28,23 +28,22 @@
   height: 15vw;
 }
 
-.figureimg1 p{
+.figureimg1 p {
   font-size: 1.2rem;
-font-family:inherit;
+  font-family: inherit;
   text-align: center;
 }
 
 .h4section2 {
- font-family:unset;
- font-size: 1.2rem;
- background: #4e95ff;
- color: white;
- padding: 1.5vw;
- border-radius: 0.7vw;
+  font-family: unset;
+  font-size: 1.2rem;
+  background: #4e95ff;
+  color: white;
+  padding: 1.5vw;
+  border-radius: 0.7vw;
 }
 
-
-.section2v{
+.section2v {
   width: 100%;
   display: flex;
   align-items: center;
@@ -58,28 +57,28 @@ font-family:inherit;
   border-bottom: 0.3vw solid gold;
 }
 
-.nxcsection2{
+.nxcsection2 {
   width: 15%;
   border: 0.2vw solid gold;
   border-radius: 2vw;
 }
 
-.des2v{
+.des2v {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.des2v p{
+.des2v p {
   font-size: 1.5rem;
-  font-family:inherit;
+  font-family: inherit;
   text-align: center;
   color: white;
   width: 60%;
 }
 
-.des2v button{
+.des2v button {
   padding: 1.5vw;
   border: 0.2vw solid gold;
   background: white;
@@ -90,11 +89,10 @@ font-family:inherit;
   color: black;
 }
 
-.box1s2{
- width: 80%;
- border: 0.2vw solid #2b247c;
- padding: 2vw;
-  margin-bottom: 5vw;
+.box1s2 {
+  width: 80%;
+  border: 0.2vw solid #2b247c;
+  padding: 2vw;
   display: flex;
   gap: 1vw;
   justify-content: center;
@@ -102,35 +100,36 @@ font-family:inherit;
   flex-direction: column;
   border-radius: 0.7vw;
 }
-
-.box2s2{
+.box2s2 {
   display: flex;
   gap: 1vw;
   justify-content: start;
   flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.pglink{
-  background:#454afa;
+.pglink {
+  display: inline-block;
+  background: #454afa;
   color: white;
   margin: 0;
   padding: 0.8vw;
   border-radius: 0.7vw;
- 
+  text-decoration: none;
 }
 
-.boxh3{
- font-family:unset;
- font-size: 1.4rem;
- border-bottom: 0.2vw solid #4e95ff;
- width: 100%;
- padding-bottom: 3vw;
+.boxh3 {
+  font-family: unset;
+  font-size: 1.4rem;
+  border-bottom: 0.2vw solid #4e95ff;
+  width: 100%;
+  padding-bottom: 3vw;
 }
-
 
 @media (max-width: 768px) {
-
-  .box1s2{
+  .box1s2 {
     padding: 3vw;
     gap: 3vw;
     width: 90%;
@@ -138,79 +137,75 @@ font-family:inherit;
     margin-bottom: 15vw;
   }
 
-  .box2s2{
+  .box2s2 {
     gap: 3vw;
   }
 
-  .boxh3{
+  .boxh3 {
     border-bottom: 0.4vw solid #4e95ff;
   }
 
-.pglink{
-  font-size: 0.9rem;
-  padding: 1.7vw;
-  border-radius: 3vw;
-}
+  .pglink {
+    font-size: 0.9rem;
+    padding: 1.7vw;
+    border-radius: 3vw;
+  }
 
-  .konten2{
+  .konten2 {
     margin-top: 15vw;
   }
 
-.desection2{  
-  align-items: center;
-  justify-content: center;
-}
-.figureimg1{
-  width: 70%;
-  border: none;
-  margin: 1vw;
-}
+  .desection2 {
+    align-items: center;
+    justify-content: center;
+  }
+  .figureimg1 {
+    width: 70%;
+    border: none;
+    margin: 1vw;
+  }
 
-.figureimg1 img {
-  height: 20vw;
-}
+  .figureimg1 img {
+    height: 20vw;
+  }
 
-.figureimg1 p{
-  font-size: 0.8rem;
-}
+  .figureimg1 p {
+    font-size: 0.8rem;
+  }
 
-.h4section2{
-  padding: 3vw;
-  border-radius: 2vw;
-  margin-top: 15vw;
-}
+  .h4section2 {
+    padding: 3vw;
+    border-radius: 2vw;
+    margin-top: 15vw;
+  }
 
-.section2v{
-  height: 60vw;
-}
+  .section2v {
+    height: 60vw;
+  }
 
+  .nxcsection2 {
+    width: 25%;
+    border: 0.2vw solid gold;
+    border-radius: 2vw;
+    margin-left: 4vw;
+  }
 
-.nxcsection2{
-  width: 25%;
-  border: 0.2vw solid gold;
-  border-radius: 2vw;
-  margin-left: 4vw;
-}
+  .des2v p {
+    font-size: 1rem;
+    font-family: inherit;
+    text-align: center;
+    color: white;
+    width: 90%;
+  }
 
-
-.des2v p{
-  font-size: 1rem;
-  font-family:inherit;
-  text-align: center;
-  color: white;
-  width: 90%;
-}
-
-
-.des2v button{
-  padding: 2vw;
-  border: 0.5vw solid gold;
-  background: white;
-  color: white;
-  width: 60%;
-  border-radius: 1vw;
-  font-size: 1rem;
-  color: black;
-}
-
+  .des2v button {
+    padding: 2vw;
+    border: 0.5vw solid gold;
+    background: white;
+    color: white;
+    width: 60%;
+    border-radius: 1vw;
+    font-size: 1rem;
+    color: black;
+  }
 }

@@ -18,27 +18,29 @@ export default function Section2() {
         </div>
       </section>
 
-      <div className="box1s2">
-        <h3 className="boxh3">Hyperlink tag: </h3>
-        <div className="box2s2">
-          <p className="pglink">#Ardeva Alghifari</p>
-          <p className="pglink">#Basic</p>
-          <p className="pglink">#Website</p>
-          <p className="pglink">#Design</p>
-        </div>
+     <section className="box1s2">
+  <h3 className="boxh3">Hyperlink tag:</h3>
 
-        <div className="box2s2">
-          <p className="pglink">#Sekolah</p>
-          <p className="pglink">#ReactJS</p>
-          <p className="pglink">#Figma</p>
-          <p className="pglink">#WhiteHookX</p>
-          <p className="pglink">#2009</p>
-          <p className="pglink">#Jawa Tengah</p>
-          <p className="pglink">#Game</p>
-        </div>
-      </div>
+  <ul className="box2s2">
+    <li><a href="#" className="pglink">#Ardeva Alghifari</a></li>
+    <li><a href="#" className="pglink">#Basic</a></li>
+    <li><a href="#" className="pglink">#Website</a></li>
+    <li><a href="#" className="pglink">#Design</a></li>
+  </ul>
 
-      <h4 className="h4section2">Riwayat Pendidikan</h4>
+  <ul className="box2s2">
+    <li><a href="#" className="pglink">#Sekolah</a></li>
+    <li><a href="#" className="pglink">#ReactJS</a></li>
+    <li><a href="#" className="pglink">#Figma</a></li>
+    <li><a href="#" className="pglink">#WhiteHookX</a></li>
+    <li><a href="#" className="pglink">#2009</a></li>
+    <li><a href="#" className="pglink">#Jawa Tengah</a></li>
+    <li><a href="#" className="pglink">#Game</a></li>
+  </ul>
+</section>
+
+      
+ {/* <h4 className="h4section2">Riwayat Pendidikan</h4>
       <section className="desection2">
         <figure className="figureimg1">
           <img src={babakan} alt="Babakan" />
@@ -52,7 +54,7 @@ export default function Section2() {
           <img src={geoinformatika} alt="Geoinformatika" />
           <p>SMK GeoInformatika</p>
         </figure>
-      </section>
+      </section> */}
     </div>
   );
 }
