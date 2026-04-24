@@ -1,0 +1,95 @@
+.ImgbtnJs {
+  border-radius: 0.7vw;
+  width: auto;
+  height: 20vw;
+  border: 0.2vw solid gold;
+}
+
+.ImgdesH {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 3vw;
+  margin-bottom: 7vw;
+  font-family: unset;
+}
+
+.ImgDesH2 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 0.15vw solid #4e95ff;
+  height: 20vw;
+  width: 40%;
+  border-radius: 0.7vw;
+}
+
+.ImgDesH2 p {
+  width: 80%;
+  text-indent: 1.5rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.H3pageJ {
+  text-align: center;
+  background: #4e95ff;
+  color: white;
+  padding: 1vw;
+  border-radius: 0.4vw;
+  margin: 0.5vw;
+  width: 60%;
+  font-size: 1rem;
+}
+
+.btnN{
+    position: fixed;
+    left: 2vw;
+    bottom: 2vw;
+    background: #4e95ff;
+    padding: 1vw;
+    border-radius: 0.4vw;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    width: 10%;
+}
+
+@media (max-width: 768px) {
+    .KontenP1{
+        margin-top: 20vw;
+    }
+  .ImgbtnJs {
+    height: auto;
+    width: 90%;
+    border-radius: 2vw;
+  }
+
+  .ImgdesH {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ImgDesH2 {
+    width: 85%;
+    height: auto;
+    padding: 2vw;
+    border: none;
+  }
+
+  .ImgDesH2 p {
+    font-size: 1.1rem;
+    width: 95%;
+  }
+
+  .H3pageJ {
+    width: 80%;
+    font-size: 1rem;
+    border-radius: 1vw;
+    margin-top: 10vw;
+  }
+}

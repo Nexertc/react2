@@ -48,6 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   gap: 3vw;
   margin-bottom: 5vw;
   background-image: url(../../img/bg15.jpeg);
@@ -208,4 +209,11 @@
     font-size: 1rem;
     color: black;
   }
+
+  
+.imgf{
+ width: 70%;
+  margin: 5vw 0;
+}
+
 }

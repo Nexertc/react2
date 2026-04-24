@@ -8,7 +8,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-article{
+section, article{
     display: flex;
     align-items: center;
     justify-content: center;

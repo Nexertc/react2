@@ -5,6 +5,20 @@ import geoinformatika from "../../img/geoinformatika.webp";
 import nxc from "../../img/nxc.png";
 
 export default function Section2() {
+  const tags1 = ["Ardeva Alghifari", "Basic", "Website", "Design"];
+  const tags2 = [
+    "SMK Geo Informatika",
+    "ReactJS",
+    "Figma",
+    "Nexertc",
+    "2009",
+    "Jawa Tengah",
+    "Game",
+  ];
+
+  const toGoogle = (text) =>
+    `https://www.google.com/search?q=${encodeURIComponent(text)}`;
+
   return (
     <div className="konten2">
       <section className="section2v">
@@ -18,29 +32,43 @@ export default function Section2() {
         </div>
       </section>
 
-     <section className="box1s2">
-  <h3 className="boxh3">Hyperlink tag:</h3>
+      <section className="box1s2">
+        <h3 className="boxh3">Hyperlink tag:</h3>
 
-  <ul className="box2s2">
-    <li><a href="#" className="pglink">#Ardeva Alghifari</a></li>
-    <li><a href="#" className="pglink">#Basic</a></li>
-    <li><a href="#" className="pglink">#Website</a></li>
-    <li><a href="#" className="pglink">#Design</a></li>
-  </ul>
+        <ul className="box2s2">
+          {tags1.map((tag) => (
+            <li key={tag}>
+              <a
+                href={toGoogle(tag)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pglink"
+              >
+                #{tag}
+              </a>
+            </li>
+          ))}
+        </ul>
 
-  <ul className="box2s2">
-    <li><a href="#" className="pglink">#Sekolah</a></li>
-    <li><a href="#" className="pglink">#ReactJS</a></li>
-    <li><a href="#" className="pglink">#Figma</a></li>
-    <li><a href="#" className="pglink">#WhiteHookX</a></li>
-    <li><a href="#" className="pglink">#2009</a></li>
-    <li><a href="#" className="pglink">#Jawa Tengah</a></li>
-    <li><a href="#" className="pglink">#Game</a></li>
-  </ul>
-</section>
+        <ul className="box2s2">
+          {tags2.map((tag) => (
+            <li key={tag}>
+              <a
+                href={toGoogle(tag)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pglink"
+              >
+                #{tag}
+              </a>
+            </li>
+          ))}
+        </ul>
 
-      
- {/* <h4 className="h4section2">Riwayat Pendidikan</h4>
+        <img className="imgf" src="https://skillicons.dev/icons?i=html,css,js,php,figma,git,github,vscode,react,nodejs,windows,canva&perline=7" />
+      </section>
+
+      {/* <h4 className="h4section2">Riwayat Pendidikan</h4>
       <section className="desection2">
         <figure className="figureimg1">
           <img src={babakan} alt="Babakan" />
