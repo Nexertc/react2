@@ -1,7 +1,11 @@
+figure{
+  margin: 0;
+  width: 100%;
+}
+
 .imgdes1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   margin-bottom: 5vw;
   gap: 3vw;
   width: 90%;
@@ -14,12 +18,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 0.1vw solid rgb(62, 62, 62);
+  padding-bottom: 3vw;
+  border-radius: 1vw;
+  position: relative;
 }
 
 .imgs1 {
   height: 16vw;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  margin-bottom: 0.5vw;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  border-bottom: 0.1vw solid #4e95ff;
 }
 .heading3 {
   font-size: 1.5rem;
@@ -27,12 +39,16 @@
   color: #4e95ff;
   margin-bottom: 1vw;
   font-family: unset;
+  width: 85%;
+  text-align: left;
 }
 .paragraft1 {
   font-family: unset;
   text-align: center;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  width: 85%;
+  text-align: left;
 }
 
 .heading2 {
@@ -42,6 +58,7 @@
   color: white;
   padding: 1.5vw;
   border-radius: 0.7vw;
+  margin-bottom: 4vw;
 }
 
 .h4sec1 {
@@ -50,6 +67,12 @@
   margin-bottom: 1vw;
   margin-top: 3vw;
 }
+.nxcs1{
+    width: 10%;
+    position: absolute;
+    bottom: 0.5vw;
+    right: 0.5vw;
+  }
 
 @media (max-width: 768px) {
 
@@ -65,23 +88,31 @@
   .imgdes2 {
     width: 90%;
     margin-bottom: 13vw;
+    border: 0.1vw solid rgb(62, 62, 62);
+    padding-bottom: 8vw;
+    border-radius: 2vw;
   }
 
   .imgs1 {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 2vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    margin-bottom: 4vw;
   }
 
   .paragraft1 {
     font-size: 0.9rem;
+    text-align: left;
+    width: 85%;
+    line-height: 1.3rem;
   }
 
   .heading2 {
     margin-top: 20vw;
     font-size: 1.2rem;
-    margin-bottom: 6vw;
+    margin-bottom: 8vw;
     padding: 3vw;
     border-radius: 2vw;
   }
@@ -89,6 +120,8 @@
   .heading3 {
     margin-top: 2vw;
     font-size: 1.3rem;
+    text-align: left;
+    width: 85%;
   }
 
   .h4sec1 {
@@ -96,4 +129,10 @@
     margin-bottom: 3vw;
     margin-top: 5vw;
   }
+
+  .nxcs1{
+    bottom: 1.5vw;
+    right: 1.5vw;
+  }
+
 }

@@ -57,6 +57,73 @@
     width: 10%;
 }
 
+/* container utama */
+.materi-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 ke samping */
+  gap: 20px;
+  padding: 20px;
+}
+
+.materi-card {
+  transition: 0.3s;
+  cursor: pointer;
+ height: 20vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2vw;
+  justify-content: start;
+  border: 0.15vw solid rgba(0,0,0,0.3);
+}
+
+.materi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.materi-card article{
+  width: 100%;
+}
+/* container code */
+.materi-card pre {
+  display: flex;
+  overflow-y: auto;
+  background: linear-gradient(135deg, #e0f2fe, #4e95ff);
+width: 80%;
+  padding: 1vw;
+  border-radius: 1vw;
+  border: 0.2vw solid #4e95ff;
+
+  box-shadow: 0 1vw 2vw rgba(78, 149, 255, 0.2);
+  transition: 0.3s;
+  height: 10vw;
+}
+
+/* isi code */
+.materi-card code {
+ font-family:monospace;
+  font-size: 14px;
+  color: #0b1a3a; /* hampir putih biar kontras */
+  line-height: 1.6;
+}
+
+/* hover effect */
+.materi-card pre:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(78, 149, 255, 0.5);
+  border-color: #93c5fd;
+}
+
+/* scrollbar */
+.materi-card pre::-webkit-scrollbar {
+  height: 0.4vw;
+}
+
+.materi-card pre::-webkit-scrollbar-thumb {
+  background: #0b1a3a;
+  border-radius: 2vw;
+}
+
+
 @media (max-width: 768px) {
     .KontenP1{
         margin-top: 20vw;
@@ -91,5 +158,50 @@
     font-size: 1rem;
     border-radius: 1vw;
     margin-top: 10vw;
+  }
+  
+  /* container utama */
+  .materi-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 kolom */
+    gap: 4vw;
+    padding: 5vw;
+  }
+
+  /* card */
+  .materi-card {
+    width: 100%;
+    padding: 4vw;
+    border-radius: 3vw;
+  }
+
+  /* judul */
+  .materi-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2vw;
+  }
+
+  /* paragraf */
+  .materi-card p {
+    font-size: 0.95rem;
+    margin-bottom: 3vw;
+    line-height: 1.6;
+  }
+
+  /* code block */
+  .materi-card pre {
+    width: 100%;
+    padding: 3.5vw;
+    border-radius: 2.5vw;
+    font-size: 0.8rem;
+  }
+
+  .materi-card code {
+    font-size: 0.8rem;
+  }
+
+  /* scroll horizontal biar aman */
+  .materi-card pre {
+    overflow-x: auto;
   }
 }

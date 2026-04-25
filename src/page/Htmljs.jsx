@@ -26,20 +26,25 @@ export default function Htmljs() {
           </div>
     </div>
 </section>
+<article className="materi-container">
 
-      {/* 1 */}
+  <section className="materi-card">
+    <header>
       <h2>1. Dasar Tombol HTML</h2>
-      <p>Tombol dibuat dengan tag button:</p>
-
+    </header>
+    <article>
       <pre>
         <code>{`<button>Klik Saya</button>`}</code>
       </pre>
+    </article>
+  </section>
 
-      {/* 2 */}
+  <section className="materi-card">
+    <header>
       <h2>2. Event onclick</h2>
-      <p>Menghubungkan tombol dengan JavaScript:</p>
-
-      <pre>
+    </header>
+    <article>
+    <pre>
         <code>{`<button onclick="halo()">Klik</button>
 
 <script>
@@ -48,44 +53,61 @@ function halo() {
 }
 </script>`}</code>
       </pre>
+    </article>
+  </section>
 
-      {/* 3 */}
+  <section className="materi-card">
+    <header>
       <h2>3. Event Listener (Lebih Baik)</h2>
-
+    </header>
+    <article>
       <pre>
         <code>{`<button id="btn">Klik</button>
 
 <script>
 const tombol = document.getElementById("btn");
 
-tombol.addEventListener("click", function() {
+tombol.addEventListener("click",
+ function() {
   alert("Halo!");
 });
 </script>`}</code>
       </pre>
+    </article>
+  </section>
 
-      {/* 4 */}
+  <section className="materi-card">
+    <header>
       <h2>4. Popup</h2>
-
+    </header>
+    <article>
       <pre>
         <code>{`function popup() {
   alert("Ini popup!");
 }`}</code>
       </pre>
+    </article>
+  </section>
 
-      {/* 5 */}
+  <section className="materi-card">
+    <header>
       <h2>5. Dark Mode Sederhana</h2>
-
+    </header>
+    <article>
       <pre>
         <code>{`function darkMode() {
   document.body.style.background = "black";
   document.body.style.color = "white";
 }`}</code>
       </pre>
+    </article>
+  </section>
 
-      {/* 6 */}
+  <section className="materi-card">
+    <header>
       <h2>6. Toggle Dark Mode</h2>
-
+    </header>
+    <article>
       <pre>
         <code>{`let dark = false;
 
@@ -101,23 +123,11 @@ function toggleMode() {
   }
 }`}</code>
       </pre>
+    </article>
+  </section>
 
-      {/* DEMO */}
-      <h2>🎮 Demo Langsung</h2>
+</article>
 
-      <button onClick={() => alert("Halo ini popup!")}>
-        Popup
-      </button>
-
-      <button
-        onClick={() => {
-          document.body.style.background = "black";
-          document.body.style.color = "white";
-        }}
-        style={{ marginLeft: "10px" }}
-      >
-        Dark Mode
-      </button>
 
       <Footer />
 
