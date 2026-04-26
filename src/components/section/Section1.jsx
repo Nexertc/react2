@@ -8,6 +8,7 @@ import twebsite from "../../img/twebsite.jpg";
 import reactimg from "../../img/react.png";
 import figma from "../../img/figma.png";
 import nxc from "../../img/nxc2.png";
+import btnjs from "../../img/btnjs.jpg";
 
 export default function Section1() {
   const navigate = useNavigate();
@@ -17,7 +18,6 @@ export default function Section1() {
         <header>
           <h2 className="heading2">Hal hal yang sudah saya pelajari</h2>
         </header>
-
         <section>
 
           <section className="imgdes1">
@@ -65,6 +65,21 @@ export default function Section1() {
           </section>
 
           <section className="imgdes1">
+
+      <article className="imgdes2" onClick={() => navigate("/Htmljs")}>
+              <figure>
+                <img className="imgs1" src={btnjs} alt="btnjs" />
+              </figure>
+              <h3 className="heading3">Button JS</h3>
+              <p className="paragraft1">
+                Mengkombinasikan tag Button dengan JavaScript.
+              </p>
+              <footer>
+                <img src={nxc} alt="nexertc" className="nxcs1" />
+              </footer>
+              <h3 className="h3ex">Exlusif ICTGIS</h3>
+            </article>
+
             <article className="imgdes2">
               <figure>
                 <img className="imgs1" src={twebsite} alt="website" />
@@ -108,10 +123,6 @@ export default function Section1() {
             </article>
           </section>
         </section>
-
-        <footer>
-          <button onClick={() => navigate("/Htmljs")}>click here</button>
-        </footer>
       </article>
     </div>
   );
