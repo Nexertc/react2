@@ -33,7 +33,7 @@ function Nav({ class1 }) {
           <a className="link1" href="https://sociabuzz.com/ardevanxc/tribe">
             <h4>Dukungan</h4>
           </a>
-          <a className="link1" href="#">
+          <a className="link1" href="#sec1">
             <h4>Nexertc</h4>
           </a>
         </div>

@@ -1,0 +1,113 @@
+
+@media (max-width: 768px) {
+  .KontenP1 {
+    margin-top: 20vw;
+  }
+  .ImgbtnJs {
+    height: auto;
+    width: 90%;
+    border-radius: 2vw;
+  }
+
+  .ImgdesH {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ImgDesH2 {
+    width: 85%;
+    height: auto;
+    padding: 2vw;
+    border: none;
+  }
+
+  .ImgDesH2 p {
+    font-size: 1.1rem;
+    width: 95%;
+  }
+
+  .H3pageJ {
+    width: 80%;
+    font-size: 1rem;
+    border-radius: 1vw;
+    margin-top: 10vw;
+  }
+
+  /* container utama */
+  .materi-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 kolom */
+    gap: 4vw;
+    padding: 5vw;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+  }
+
+  /* card */
+  .materi-card {
+    width: 95%;
+    padding: 0;
+    border-radius: 3vw;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* judul */
+  .materi-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2vw;
+  }
+
+  /* paragraf */
+  .materi-card p {
+    font-size: 0.95rem;
+    margin-bottom: 3vw;
+    line-height: 1.6;
+  }
+
+  /* code block */
+  .materi-card pre {
+    width: 90%;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    font-size: 0.8rem;
+    height: auto;
+  }
+
+  .materi-card code {
+    font-size: 0.8rem;
+  }
+
+  /* scroll horizontal biar aman */
+  .materi-card pre {
+    overflow-x: auto;
+  }
+  .SaCode {
+    padding: 2vw;
+    border-radius: 1vw;
+  }
+  .btnN{
+    padding: 2vw;
+    font-size: 1.2rem;
+    border-radius: 1vw;
+    width: 20%;
+    border: 0.5vw solid white;
+  }
+  .H4HtmlJS1 {
+    font-size: 1.3rem;
+    margin-bottom: 3vw;
+    width: 90%;
+    text-align: left;
+    color: #4e95ff;
+  }
+  .P1HtmlJs1 {
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 90%;
+    text-align: left;
+  }
+}

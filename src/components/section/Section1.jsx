@@ -13,7 +13,7 @@ import btnjs from "../../img/btnjs.jpg";
 export default function Section1() {
   const navigate = useNavigate();
   return (
-    <div className="konten">
+    <div className="konten" id="sec1">
       <article>
         <header>
           <h2 className="heading2">Hal hal yang sudah saya pelajari</h2>
