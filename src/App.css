@@ -6,6 +6,10 @@
     --color5: black;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     padding: 0;
     margin: 0;

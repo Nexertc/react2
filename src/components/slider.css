@@ -16,7 +16,7 @@
 
         .slider{
           width:600px;
-          height:350px;
+          height:32vw;
           overflow:hidden;
           border-radius:20px;
          
@@ -56,4 +56,25 @@
             width: 95%;
             height: 0.1vw;
             background: var(--color2);
+        }
+
+        @media (max-width: 768px) {
+
+            .slider{
+                height: 60vw;
+                width: 95%;
+                border-radius: 2vw;
+                border: 0.5vw solid var(--color1);
+                margin-bottom: 5vw;
+            }
+            
+            .kontenS{
+                flex-direction: column-reverse;
+            }
+
+            .containerS{
+                width: 95%;
+                border-radius: 2vw;
+            }
+
         }
