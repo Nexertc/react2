@@ -128,6 +128,36 @@
   width: 100%;
   padding-bottom: 3vw;
 }
+.scroll-container{
+  width: 60%;
+  overflow: hidden;
+  padding: 1vw 0;
+  
+}
+
+.scroll-track{
+  display: flex;
+  gap: 1vw;
+  width: max-content;
+  animation: bolakBalik 50s linear infinite alternate;
+  width: 100%;
+}
+
+.scroll-track img{
+  width: 70%;
+  border-radius: 1vw;
+  flex-shrink: 0;
+}
+
+@keyframes bolakBalik{
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(-500%);
+  }
+}
 
 @media (max-width: 768px) {
   .box1s2 {

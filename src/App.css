@@ -10,6 +10,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar{
@@ -236,7 +237,7 @@ z-index: 999;
         margin-top: 3vw;
         border-radius: 1vw;     
         width: 35%;
-        background: var(--bg);
+        background: var(--color1);
         color: white;
     }
     .btnmedia{

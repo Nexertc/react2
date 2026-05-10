@@ -3,6 +3,10 @@ figure {
   width: 100%;
 }
 
+.kontenS1{
+  margin-top: 7vw;
+}
+
 .imgdes1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
