@@ -183,7 +183,7 @@
   .pglink {
     font-size: 0.9rem;
     padding: 1.7vw;
-    border-radius: 3vw;
+    border-radius: clamp(2vw, 1vw, 1vw);
   }
 
   .konten2 {

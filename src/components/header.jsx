@@ -1,4 +1,4 @@
- import Button from "../components/button";
+import Button from "../components/button";
 import ardeva from "../img/coc3.webp";
 import clan from "../img/clan3.png";
 import ig from "../img/ig.png";
@@ -9,24 +9,24 @@ import nxc from "../img/nxc2.png";
 import { useState } from "react";
 import Nav from "../components/nav";
 import "../components/nav.css";
- 
- export default function Header() {
-     function bukaLink(url) {
+
+export default function Header() {
+  function bukaLink(url) {
     window.open(url, "_blank");
   }
-  
+
   const [showPopup, setShowPopup] = useState(false);
 
   function klikmedia() {
     setShowPopup(!showPopup);
     document.body.style.overflow = showPopup ? "auto" : "hidden";
   }
-return(
+  return (
     <div>
-           <header>
+      <header>
         <Nav class1="navigasi" />
-        <div className="cns">
-          <div className="imgd1">
+        <article className="cns">
+          <section className="imgd1">
             <div className="imglz">
               <div className="img1">
                 <h2 className="h2img1">Nexertc</h2>
@@ -35,11 +35,8 @@ return(
               <div className="overlay"></div>
             </div>
 
-            <div className="containerbtn">
-              <Button teks="Tentang Saya"
-               className="btnabout" 
-               href="#sec1"
-               />
+            <section className="containerbtn">
+              <Button teks="Tentang Saya" className="btnabout" href="#sec1" />
 
               <Button
                 teks="Kunjungi media"
@@ -47,19 +44,20 @@ return(
                 tujuan={klikmedia}
                 href="#"
               />
-            </div>
-          </div>
+            </section>
+          </section>
           <div className="des">
             <h3>Ardeva Alghifari</h3>
             <p>
-              Website ini dibuat menggunakan library bernama <b>React JS</b> dan tols bernama  
-              <b> vite</b>, dibuat oleh  Ardeva Alghifari seorang pelajar dari sekolah SMK Geo
-              Informatika, dan lulusan dari SMP Negeri 01 Dramaga lahir pada 28
-              mei 2009 di Sragen Jawa Tengah. Jika ada keperluan dengan saya
-              bisa kunjungi media sosial saya di bawah ini.
+              Website ini dibuat menggunakan library bernama <b>React JS</b> dan
+              tols bernama
+              <b> vite</b>, dibuat oleh Ardeva Alghifari seorang pelajar dari
+              sekolah SMK Geo Informatika, dan lulusan dari SMP Negeri 01
+              Dramaga lahir pada 28 mei 2009 di Sragen Jawa Tengah. Jika ada
+              keperluan dengan saya bisa kunjungi media sosial saya di bawah
+              ini.
             </p>
-
-            <div className="imgd2">
+            <figure className="imgd2">
               <img className="img2" src={clan} alt="clan" />
 
               <img
@@ -101,14 +99,16 @@ return(
                   )
                 }
               />
-            </div>
+            </figure>{" "}
+            {/* classname imgd2 */}
+             <img className="nxcX" src={nxc} alt="nxc" />
           </div>{" "}
           {/* classname des */}
-        </div> {/* classname cns */}
-
+        </article>{" "}
+        {/* classname cns */}
       </header>
-       {showPopup && <div className="popup"> </div>}
+      {showPopup && <div className="popup"> </div>}
       {showPopup && <div onClick={klikmedia} className="overlaypopup"></div>}
     </div>
-);
- } 
+  );
+}

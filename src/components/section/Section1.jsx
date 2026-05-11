@@ -17,6 +17,7 @@ export default function Section1() {
       <article>
         <header>
           <h2 className="heading2">Hal hal yang sudah saya pelajari</h2>
+          <p className="section-intro">Pengalaman belajar dan pengembangan skill yang telah saya capai dalam perjalanan menjadi web developer. Setiap teknologi dipilih untuk memberikan nilai maksimal dalam membangun aplikasi web yang responsif dan user-friendly.</p>
         </header>
         <section>
 
@@ -122,6 +123,27 @@ export default function Section1() {
               </footer>
             </article>
           </section>
+          
+          <div className="stats-container">
+            <div className="stat-item">
+              <span className="stat-number">6+</span>
+              <p className="stat-label">Teknologi</p>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">50+</span>
+              <p className="stat-label">Proyek</p>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">100%</span>
+              <p className="stat-label">Dedikasi</p>
+            </div>
+          </div>
+          
+          <div className="cta-section">
+            <h3 className="cta-title">Siap untuk Kolaborasi?</h3>
+            <p className="cta-description">Mari kita ciptakan sesuatu yang luar biasa bersama. Hubungi saya untuk diskusi lebih lanjut tentang proyek Anda.</p>
+            <button className="cta-button" onClick={() => navigate("/Htmljs")}>Lihat Portofolio Lengkap</button>
+          </div>
         </section>
       </article>
     </div>

@@ -12,13 +12,14 @@
 
 html{
     scroll-behavior: smooth;
-     overflow-x: hidden;
+     
 }
 
 body{
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar{
@@ -65,6 +66,10 @@ body::-webkit-scrollbar{
     width: 35%;
     position: absolute;
     z-index: 999;
+}
+
+.cns, .containerbtn, .imgd1, .imgd2{
+    flex-direction: row;
 }
 
 .imglz{
@@ -130,6 +135,7 @@ body::-webkit-scrollbar{
    padding: 2vw;
    border-radius: 0.7vw;
    height: 32vw;
+   position: relative;
 }
 
 .des p{
@@ -204,6 +210,12 @@ text-decoration: none;
     z-index: 999;
 }
 
+.nxcX{
+    width: 10%;
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+}
 
 @media (max-width: 768px) {
     .konten{
@@ -296,6 +308,9 @@ text-decoration: none;
     .imgd2{
         gap: 5vw;
     }
+    .nxcX{
+        display: none;
+    }
 }
 
   @media (min-width: 769px) and (max-width: 1100px){
@@ -320,6 +335,10 @@ text-decoration: none;
 
 .des p{
     font-size: 0.9rem;
+}
+
+.nxcX{
+    display: none;
 }
 
   }
