@@ -11,8 +11,8 @@ export default function Footer() {
  
  <div className="deslink1">
    <div className="deslink">
+      <a href="#sec1">Page</a>
      <a href="https://ardevaalghifari.blogspot.com/">Blog</a>
-        <a href="">About</a>
         <a href="">HTML</a>
         <a href="">CSS</a>
         <a href="">JavaScript</a>

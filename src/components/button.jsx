@@ -1,10 +1,10 @@
 
 
-function Button({ tujuan, teks, className }) {
+function Button({ tujuan, teks, className, href }) {
   return (
-    <button className={`btn1 ${className}`} onClick={tujuan}>
+    <a className={`btn1 ${className}`} onClick={tujuan} href={href}>
       {teks}
-    </button>
+    </a>
   );
 }
 

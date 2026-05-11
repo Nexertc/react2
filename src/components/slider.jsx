@@ -6,9 +6,10 @@ import ardeva from "../img/ardeva.png";
 
 export default function Slider() {
   const images = [
-     imgreact,
+    "https://media2.dev.to/dynamic/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fjplnld3gptkremcqom5q.png",
+    ardeva,
+    "https://media.licdn.com/dms/image/v2/D4E12AQEP1Ce5MUm5pw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1687871753149?e=2147483647&v=beta&t=cgEyXmxhvO5EAqwnTBx8sLxQNZfbFO9IdH9UVM4JLiE",
     js,
-   ardeva,
   ];
 
   const [index, setIndex] = useState(0);
@@ -36,7 +37,7 @@ export default function Slider() {
     return () => clearInterval(interval);
   }, [direction, images.length]);
 
-   const tags1 = ["Ardeva Alghifari", "Basic", "Website", "Design"];
+  const tags1 = ["Ardeva Alghifari", "Basic", "Website", "Design"];
   const tags2 = [
     "SMK Geo Informatika",
     "ReactJS",
@@ -50,11 +51,9 @@ export default function Slider() {
   const toGoogle = (text) =>
     `https://www.google.com/search?q=${encodeURIComponent(text)}`;
 
-
   return (
-  
     <div className="kontenS">
-          <div className="slider">
+      <div className="slider">
         <div
           className="slides"
           style={{
@@ -67,11 +66,10 @@ export default function Slider() {
         </div>
       </div>
 
-          <article className="containerS">
-            <h3 className="headingS">Hyperlink Tag</h3>
-            <hr className="hrS" />
+      <article className="containerS">
+        <h3 className="headingS">Hyperlink Tag</h3>
+        <hr className="hrS" />
 
-            
         <ul className="box2s2">
           {tags1.map((tag) => (
             <li key={tag}>
@@ -102,11 +100,11 @@ export default function Slider() {
           ))}
         </ul>
 
-             <img className="imgf" src="https://skillicons.dev/icons?i=html,css,js,php,figma,git,github,vscode,react,nodejs,windows,canva&perline=7" />
-  
-          </article>
-
+        <img
+          className="imgf"
+          src="https://skillicons.dev/icons?i=html,css,js,php,figma,git,github,vscode,react,nodejs,windows,canva&perline=6"
+        />
+      </article>
     </div>
-  
   );
 }

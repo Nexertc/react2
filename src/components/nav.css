@@ -8,8 +8,8 @@
 }
 
 .navigasi {
-  background: linear-gradient(80deg, var(--color2), 85%, var(--color4));
-  height: 7vw;
+  background: var(--color1);
+  height: 5.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,14 +50,14 @@
 .side-menu-btn {
   position: absolute;
   left: 1vw;
- height: 70%;
- width: auto;
-  font-size: 2rem;
+ height: 80%;
+ width: 5%;
+  font-size: clamp(1.5vw, 1.5rem, 2rem);
   background: var(--color6);
   color: white;
   border: none;
   border-radius: 0.4vw;
-  padding: 0.4vw 1.1vw;
+ 
   cursor: pointer;
   z-index: 2000;
   backdrop-filter: blur(6px);
@@ -156,8 +156,7 @@
 
   .side-menu-btn {
     left: 3vw;
-    font-size: 1.3rem; /* teks tetap pakai rem */
-    padding: 1.5vw 2.5vw;
+    width: 10%;
     border-radius: 2vw;
   }
 

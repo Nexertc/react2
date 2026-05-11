@@ -36,19 +36,24 @@ return(
             </div>
 
             <div className="containerbtn">
-              <Button teks="Tentang Saya" className="btnabout" />
+              <Button teks="Tentang Saya"
+               className="btnabout" 
+               href="#sec1"
+               />
 
               <Button
                 teks="Kunjungi media"
                 className="btnabout btnmedia"
                 tujuan={klikmedia}
+                href="#"
               />
             </div>
           </div>
           <div className="des">
             <h3>Ardeva Alghifari</h3>
             <p>
-              Website Ardeva Alghifari seorang pelajar dari sekolah SMK Geo
+              Website ini dibuat menggunakan library bernama <b>React JS</b> dan tols bernama  
+              <b> vite</b>, dibuat oleh  Ardeva Alghifari seorang pelajar dari sekolah SMK Geo
               Informatika, dan lulusan dari SMP Negeri 01 Dramaga lahir pada 28
               mei 2009 di Sragen Jawa Tengah. Jika ada keperluan dengan saya
               bisa kunjungi media sosial saya di bawah ini.

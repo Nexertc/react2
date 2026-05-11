@@ -159,6 +159,10 @@
   }
 }
 
+.imgf{
+  width: clamp(250px, 70%, 1200px);
+}
+
 @media (max-width: 768px) {
   .box1s2 {
     padding: 3vw;
