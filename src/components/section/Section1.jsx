@@ -19,6 +19,10 @@ export default function Section1() {
           <h2 className="heading2">Hal hal yang sudah saya pelajari</h2>
           <p className="section-intro">Pengalaman belajar dan pengembangan skill yang telah saya capai dalam perjalanan menjadi web developer. Setiap teknologi dipilih untuk memberikan nilai maksimal dalam membangun aplikasi web yang responsif dan user-friendly.</p>
         </header>
+
+         <img className="imgG1" src="https://streak-stats.demolab.com?user=Nexertc&theme=tokyonight" width="90%" />
+    <img className="imgG2" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00F7FF&width=435&lines=Ardeva+Alghifari;React+Developer;Welcome+to+my+Website" width="90%" />
+
         <section>
 
           <section className="imgdes1">
@@ -97,7 +101,8 @@ export default function Section1() {
 
             <article className="imgdes2">
               <figure>
-                <img className="imgs1" src={reactimg} alt="react" />
+
+                <img className="imgs1" src=  "https://media2.dev.to/dynamic/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fjplnld3gptkremcqom5q.png" alt="react" />
               </figure>
               <h3 className="heading3">React</h3>
               <p className="paragraft1">
@@ -123,28 +128,8 @@ export default function Section1() {
               </footer>
             </article>
           </section>
-          
-          <div className="stats-container">
-            <div className="stat-item">
-              <span className="stat-number">6+</span>
-              <p className="stat-label">Teknologi</p>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">50+</span>
-              <p className="stat-label">Proyek</p>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">100%</span>
-              <p className="stat-label">Dedikasi</p>
-            </div>
-          </div>
-          
-          <div className="cta-section">
-            <h3 className="cta-title">Siap untuk Kolaborasi?</h3>
-            <p className="cta-description">Mari kita ciptakan sesuatu yang luar biasa bersama. Hubungi saya untuk diskusi lebih lanjut tentang proyek Anda.</p>
-            <button className="cta-button" onClick={() => navigate("/Htmljs")}>Lihat Portofolio Lengkap</button>
-          </div>
         </section>
+
       </article>
     </div>
   );

@@ -79,7 +79,7 @@ figure {
   line-height: 1.6;
   margin: 0;
   padding: 0 1vw 3vw 0;
-  max-width: 800px;
+  width: 90%;
 }
 
 .h4sec1 {
@@ -219,6 +219,11 @@ figure {
   background: rgba(212, 175, 55, 0.25);
   border-radius: 50%;
 }
+
+.imgG1{
+  width: 40%;
+}
+
 @media (max-width: 768px) {
   .imgdes1 {
     grid-template-columns: repeat(1, 1fr);
@@ -234,37 +239,6 @@ figure {
     border: 0.1vw solid rgb(62, 62, 62);
     padding-bottom: 8vw;
     border-radius: 2vw;
-  }
-
-  .section-intro {
-    font-size: 0.9rem;
-    margin-bottom: 2vw;
-    padding: 0;
-  }
-
-  .stats-container {
-    flex-direction: column;
-    gap: 2vw;
-    margin: 3vw 0;
-    padding: 2vw;
-  }
-
-  .stat-number {
-    font-size: 2rem;
-  }
-
-  .cta-section {
-    padding: 3vw;
-    margin-top: 3vw;
-  }
-
-  .cta-title {
-    font-size: 1.4rem;
-  }
-
-  .cta-button {
-    padding: 1.5vw 2vw;
-    font-size: 0.95rem;
   }
 
   .imgs1 {

@@ -109,12 +109,12 @@
 
     .footer-social{
         gap: 5vw;
-        flex-wrap: wrap;
+       
         justify-content: center;
     }
 
     .footer-social a{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     

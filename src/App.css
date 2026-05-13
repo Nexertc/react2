@@ -262,9 +262,10 @@ text-decoration: none;
         padding: 3.5vw;
         margin-top: 3vw;
         border-radius: 1vw;     
-        width: 35%;
+        width: 38%;
         background: var(--color1);
         color: white;
+        font-size: 0.7rem;
     }
     .btnmedia{
         background: none;
@@ -291,6 +292,7 @@ text-decoration: none;
     }
 
     .cns h3{
+          font-size: clamp(1rem, 1.5rem, 2rem);
         margin-bottom: 1vw;
         margin-top: 10vw;
     }

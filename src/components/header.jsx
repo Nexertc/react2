@@ -36,7 +36,7 @@ export default function Header() {
             </div>
 
             <section className="containerbtn">
-              <Button teks="Tentang Saya" className="btnabout" href="#sec1" />
+              <Button teks="Open Page" className="btnabout" href="#sec1" />
 
               <Button
                 teks="Kunjungi media"
