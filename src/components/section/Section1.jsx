@@ -17,14 +17,9 @@ export default function Section1() {
       <article>
         <header>
           <h2 className="heading2">Hal hal yang sudah saya pelajari</h2>
-          <p className="section-intro">Pengalaman belajar dan pengembangan skill yang telah saya capai dalam perjalanan menjadi web developer. Setiap teknologi dipilih untuk memberikan nilai maksimal dalam membangun aplikasi web yang responsif dan user-friendly.</p>
+           <p className="section-intro">Pengalaman belajar dan pengembangan skill yang telah saya capai dalam perjalanan menjadi web developer. Setiap teknologi dipilih untuk memberikan nilai maksimal dalam membangun aplikasi web yang responsif dan user-friendly.</p>
         </header>
-
-         <img className="imgG1" src="https://streak-stats.demolab.com?user=Nexertc&theme=tokyonight" width="90%" />
-    <img className="imgG2" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00F7FF&width=435&lines=Ardeva+Alghifari;React+Developer;Welcome+to+my+Website" width="90%" />
-
         <section>
-
           <section className="imgdes1">
             <article className="imgdes2">
               <figure>
@@ -128,6 +123,35 @@ export default function Section1() {
               </footer>
             </article>
           </section>
+           <article className="artcG">
+        <section className="desG">
+         
+          <img
+            className="imgG1"
+            src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif"
+          />
+          <img
+            className="imgG1"
+            src="https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif"
+          />
+          <img
+            className="imgG1"
+            src="https://media.giphy.com/media/3oKIPtjElfqwMOTbH2/giphy.gif"
+          />
+          <img
+            className="imgG1"
+            src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+          />
+          <img
+            className="imgG1"
+            src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif"
+          />
+          <img
+            className="imgG1"
+            src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif"
+          />
+        </section>
+      </article>
         </section>
 
       </article>

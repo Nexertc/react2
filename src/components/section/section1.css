@@ -1,6 +1,7 @@
 figure {
   margin: 0;
   width: 100%;
+  display: flex;
 }
 
 .kontenS1{
@@ -75,7 +76,7 @@ figure {
 .section-intro {
   font-family: unset;
   font-size: 1rem;
-  color: #555;
+  color: var(--color5);
   line-height: 1.6;
   margin: 0;
   padding: 0 1vw 3vw 0;
@@ -116,7 +117,7 @@ figure {
 .stat-label {
   font-family: unset;
   font-size: 0.95rem;
-  color: #666;
+  color: var(--color5);
   margin: 0.5vw 0 0 0;
 }
 
@@ -147,8 +148,8 @@ figure {
 .cta-button {
   padding: 1.2vw 2.5vw;
   font-size: 1rem;
-  background: white;
-  color: #4e95ff;
+  background: var(--color4);
+  color: var(--color1);
   border: none;
   border-radius: 0.7vw;
   cursor: pointer;
@@ -180,7 +181,7 @@ figure {
   padding: 0.5vw 1.2vw;
   font-size: 1rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--color5);
   background: linear-gradient(135deg, #fff8dc, #f5e6b3, #d4af37);
   border: 0.1vw solid #b8962e;
   border-radius: 12px;
@@ -220,9 +221,6 @@ figure {
   border-radius: 50%;
 }
 
-.imgG1{
-  width: 40%;
-}
 
 @media (max-width: 768px) {
   .imgdes1 {

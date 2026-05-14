@@ -82,12 +82,11 @@
 .des2v button {
   padding: 1.5vw;
   border: 0.2vw solid gold;
-  background: white;
-  color: white;
+  background: var(--color4);
   width: 50%;
   border-radius: 0.5vw;
   font-size: 1.2rem;
-  color: black;
+  color: var(--color5);
 }
 
 .box1s2 {
@@ -163,7 +162,24 @@
   width: clamp(250px, 70%, 1200px);
 }
 
+.desG{
+  flex-direction: row;
+}
+.imgG1{
+  height: 10vw;
+  width: auto;
+}
+
 @media (max-width: 768px) {
+
+  .desG{
+    flex-wrap: wrap-reverse;
+  }
+  
+  .imgG1{
+    height: 17vw;
+  }
+
   .box1s2 {
     padding: 3vw;
     gap: 3vw;
@@ -236,12 +252,11 @@
   .des2v button {
     padding: 2vw;
     border: 0.5vw solid gold;
-    background: white;
-    color: white;
+    background: var(--color4);
     width: 60%;
     border-radius: 1vw;
     font-size: 1rem;
-    color: black;
+    color: var(--color5);
   }
 
   

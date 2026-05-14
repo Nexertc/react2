@@ -130,6 +130,6 @@
 
 .SaCode.copied {
   background: rgb(0, 255, 0); /* hijau */
-  color: black;
+  color: var(--color5);
   transition: 0.7s;
 }

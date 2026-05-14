@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import imgreact from "../img/react.png";
 import js from "../img/javascript.png";
 import ardeva from "../img/ardeva.png";
+import space from "../img/space.webp";
+import nxcX from "../img/nxc2.png";
 
 export default function Slider() {
   const images = [
@@ -10,6 +12,7 @@ export default function Slider() {
     ardeva,
     "https://media.licdn.com/dms/image/v2/D4E12AQEP1Ce5MUm5pw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1687871753149?e=2147483647&v=beta&t=cgEyXmxhvO5EAqwnTBx8sLxQNZfbFO9IdH9UVM4JLiE",
     js,
+    space
   ];
 
   const [index, setIndex] = useState(0);
@@ -64,6 +67,17 @@ export default function Slider() {
             <img key={i} src={img} alt="" />
           ))}
         </div>
+
+  {/* DOTS */}
+  <div className="dots">
+    {images.map((_, i) => (
+      <button
+        key={i}
+        className={`dot ${index === i ? "active" : ""}`}
+        onClick={() => setIndex(i)}
+      ></button>
+    ))}
+  </div>
       </div>
 
       <article className="containerS">
@@ -104,6 +118,7 @@ export default function Slider() {
           className="imgf"
           src="https://skillicons.dev/icons?i=html,css,js,php,figma,git,github,vscode,react,nodejs,windows,canva&perline=6"
         />
+           <img className="nxcX" src={nxcX} alt="nxc" />
       </article>
     </div>
   );

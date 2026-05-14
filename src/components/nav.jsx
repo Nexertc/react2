@@ -2,12 +2,33 @@ import "./nav.css";
 import nxc from "../img/nxc.png";
 import { useState, useEffect } from "react";
 
-function Nav({ class1 }) {
+export default function Nav({ class1 }) {
   const [open, setOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return window.localStorage.getItem("theme") === "dark";
+  });
+
+  useEffect(() => {
+    const body = document.body;
+    if (darkMode) {
+      body.classList.add("dark-mode");
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      body.classList.remove("dark-mode");
+      window.localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
   function klik() {
     setOpen(!open);
     document.body.style.overflow = "hidden";
+    document.body.style.overflow = "auto";
+    document.body.style.overflowX = "hidden";
+  }
+
+  function toggleTheme() {
+    setDarkMode((prev) => !prev);
   }
 
   function overlay() {
@@ -22,8 +43,11 @@ function Nav({ class1 }) {
 
       <nav className={class1}>
           <button className="side-menu-btn" onClick={klik}>
-        ☰
-      </button>
+            ☰
+          </button>
+          <button className="theme-toggle-btn" onClick={toggleTheme}>
+            {darkMode ? "Light Mode" : "Dark Mode"}
+          </button>
         <div className="containerlink">
           <a
             className="link1 blog"
@@ -55,4 +79,3 @@ function Nav({ class1 }) {
   );
 }
 
-export default Nav;
