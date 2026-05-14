@@ -4,7 +4,9 @@
     --color3: gold;
     --color4: white;
     --color5: black;
-    --btn:#0f172acc;
+
+    --still1:#0f172acc;
+    --still2: white;
 }
 
 *{
@@ -32,7 +34,10 @@ body.dark-mode {
     --color4: #0f1726;
     --color5: #e7eefb;
     --color6: rgba(255,255,255,0.16);
-     --btn:#0f172acc;
+
+     --still1:#0f172acc;
+     --still2:white;
+
     background: var(--color4);
     color: var(--color5);
 }
@@ -98,7 +103,7 @@ body::-webkit-scrollbar{
 
 .overlay{
     position: absolute;
-    background: var(--color5);
+    background: var(--still1);
     opacity: 50%;
     width: 100%;
     height: 100%;
@@ -220,7 +225,7 @@ text-decoration: none;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--color5);
+    background: var(--still1);
     opacity: 50%;
     z-index: 999;
 }

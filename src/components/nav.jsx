@@ -45,9 +45,7 @@ export default function Nav({ class1 }) {
           <button className="side-menu-btn" onClick={klik}>
             ☰
           </button>
-          <button className="theme-toggle-btn" onClick={toggleTheme}>
-            {darkMode ? "Light Mode" : "Dark Mode"}
-          </button>
+         
         <div className="containerlink">
           <a
             className="link1 blog"
@@ -61,9 +59,18 @@ export default function Nav({ class1 }) {
           <a className="link1" href="#sec1">
             <h4>Nexertc</h4>
           </a>
+         
         </div>
-
-        <img className="nxcnav" src={nxc} alt="nxc" />
+  <button className="theme-btn nxcnav" onClick={toggleTheme}>
+  <img
+    src={
+      darkMode
+        ?  "https://cdn-icons-png.flaticon.com/512/3222/3222800.png"
+        : "https://cdn-icons-png.flaticon.com/512/740/740878.png"
+    }
+    alt="theme icon"
+  />
+</button>
       </nav>
 
       <aside className={`side-menu ${open ? "side-menu-open" : ""}`}>
@@ -71,6 +78,7 @@ export default function Nav({ class1 }) {
           <a href="https://ardevaalghifari.blogspot.com/">Blog</a>
           <a href="https://sociabuzz.com/ardevanxc/tribe">Dukungan</a>
           <a href="#">Nexertc</a>
+  
         </nav>
       </aside>
 
