@@ -212,7 +212,4 @@ background: none;
     transform: scale(0.98);
   }
 
-  .side-menu-overlay {
-    background: var(--color6);
-  }
 }

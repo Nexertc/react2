@@ -6,7 +6,7 @@ import github from "../img/github.png";
 import yt from "../img/yt.png";
 import tiktok from "../img/tiktokrm.png";
 import nxc from "../img/nxc2.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Nav from "../components/nav";
 import "../components/nav.css";
 
@@ -21,12 +21,13 @@ export default function Header() {
     setShowPopup(!showPopup);
     document.body.style.overflow = showPopup ? "auto" : "hidden";
   }
+
   return (
     <div>
       <header>
         <Nav class1="navigasi" />
         <article className="cns">
-          <section className="imgd1">
+          <section className="imgd1 fade-up">
             <div className="imglz">
               <div className="img1">
                 <h2 className="h2img1">Nexertc</h2>
@@ -46,7 +47,7 @@ export default function Header() {
               />
             </section>
           </section>
-          <div className="des">
+          <div className="des fade-up">
             <h3>Ardeva Alghifari</h3>
             <p>
               Website ini dibuat menggunakan library bernama <b>React JS</b> dan

@@ -21,7 +21,7 @@ export default function Section1() {
         </header>
         <section>
           <section className="imgdes1">
-            <article className="imgdes2">
+            <article className="imgdes2 fade-up">
               <figure>
                 <img className="imgs1" src={html5} alt="html5" />
               </figure>
@@ -35,7 +35,7 @@ export default function Section1() {
               </footer>
             </article>
 
-            <article className="imgdes2">
+            <article className="imgdes2 fade-up">
               <figure>
                 <img className="imgs1" src={css} alt="css" />
               </figure>
@@ -49,7 +49,7 @@ export default function Section1() {
               </footer>
             </article>
 
-            <article className="imgdes2">
+            <article className="imgdes2 fade-up">
               <figure>
                 <img className="imgs1" src={js} alt="js" />
               </figure>
@@ -62,11 +62,9 @@ export default function Section1() {
                 <img src={nxc} alt="nexertc" className="nxcs1" />
               </footer>
             </article>
-          </section>
+         
 
-          <section className="imgdes1">
-
-      <article className="imgdes2" onClick={() => navigate("/Htmljs")}>
+      <article className="imgdes2 fade-up" onClick={() => navigate("/Htmljs")}>
               <figure>
                 <img className="imgs1" src={btnjs} alt="btnjs" />
               </figure>
@@ -80,7 +78,7 @@ export default function Section1() {
               <h3 className="h3ex">Exlusif ICTGIS</h3>
             </article>
 
-            <article className="imgdes2">
+            <article className="imgdes2 fade-up">
               <figure>
                 <img className="imgs1" src={twebsite} alt="website" />
               </figure>
@@ -94,7 +92,7 @@ export default function Section1() {
               </footer>
             </article>
 
-            <article className="imgdes2">
+            <article className="imgdes2 fade-up">
               <figure>
 
                 <img className="imgs1" src=  "https://media2.dev.to/dynamic/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fjplnld3gptkremcqom5q.png" alt="react" />
@@ -109,7 +107,7 @@ export default function Section1() {
               </footer>
             </article>
 
-            <article className="imgdes2">
+            <article className="imgdes2 fade-up">
               <figure>
                 <img className="imgs1" src={figma} alt="figma" />
               </figure>

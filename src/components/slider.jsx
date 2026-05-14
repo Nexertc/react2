@@ -40,23 +40,27 @@ export default function Slider() {
     return () => clearInterval(interval);
   }, [direction, images.length]);
 
-  const tags1 = ["Ardeva Alghifari", "Basic", "Website", "Design"];
-  const tags2 = [
-    "SMK Geo Informatika",
-    "ReactJS",
-    "Figma",
-    "Nexertc",
-    "2009",
-    "Jawa Tengah",
-    "Game",
-  ];
+  const tags1 = [
+  ["React", "https://react.dev"],
+  ["UI Design", "https://figma.com"],
+  ["My Github", "https://github.com/Nexertc"],
+  ["Portfolio", "https://nexertc.vercel.app"],
+];
 
-  const toGoogle = (text) =>
-    `https://www.google.com/search?q=${encodeURIComponent(text)}`;
+const tags2 = [
+  ["ReactJS", "https://react.dev"],
+  ["Figma App", "https://figma.com"],
+  ["GitHub Profile", "https://github.com/Nexertc"],
+  ["Tailwind CSS", "https://tailwindcss.com"],
+  ["Vite Build Tool", "https://vitejs.dev"],
+    ["JavaScript", "https://developer.mozilla.org/en-US/docs/Web/JavaScript"],
+];
+
+
 
   return (
     <div className="kontenS">
-      <div className="slider">
+      <div className="slider fade-up">
         <div
           className="slides"
           style={{
@@ -80,40 +84,39 @@ export default function Slider() {
   </div>
       </div>
 
-      <article className="containerS">
+      <article className="containerS fade-up">
         <h3 className="headingS">Hyperlink Tag</h3>
         <hr className="hrS" />
 
-        <ul className="box2s2">
-          {tags1.map((tag) => (
-            <li key={tag}>
-              <a
-                href={toGoogle(tag)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="pglink"
-              >
-                #{tag}
-              </a>
-            </li>
-          ))}
-        </ul>
+<ul className="box2s2">
+  {tags1.map(([text, url]) => (
+    <li key={text}>
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="pglink"
+      >
+        #{text}
+      </a>
+    </li>
+  ))}
+</ul>
 
-        <ul className="box2s2">
-          {tags2.map((tag) => (
-            <li key={tag}>
-              <a
-                href={toGoogle(tag)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="pglink"
-              >
-                #{tag}
-              </a>
-            </li>
-          ))}
-        </ul>
-
+      <ul className="box2s2">
+  {tags2.map(([text, url]) => (
+    <li key={text}>
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="pglink"
+      >
+        #{text}
+      </a>
+    </li>
+  ))}
+</ul>
         <img
           className="imgf"
           src="https://skillicons.dev/icons?i=html,css,js,php,figma,git,github,vscode,react,nodejs,windows,canva&perline=6"

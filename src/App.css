@@ -237,6 +237,19 @@ text-decoration: none;
     right: 1vw;
 }
 
+/* posisi awal */
+.fade-up {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+}
+
+/* saat muncul */
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
     .konten{
         margin-top: 0;
