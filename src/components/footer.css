@@ -1,10 +1,4 @@
-:root{
-    --color1: #4e95ff;
-    --color2: #454afa;
-    --color3: gold;
-    --color4: white;
-    --color5: black;
-}
+
 
 .imgfooter {
   width: 100%;
@@ -74,7 +68,7 @@
 .footer-bottom p{
     color: white;
     font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font2)
 }
 
 .footer-social{

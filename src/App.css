@@ -1,12 +1,15 @@
 :root{
     --color1: #4e95ff;
-    --color2: #454afa;
     --color3: gold;
     --color4: white;
     --color5: black;
 
     --still1:#0f172acc;
     --still2: white;
+
+    --font1:Arial, sans-serif;
+    --font2: Arial, Helvetica, sans-serif;
+    --font3:unset;
 }
 
 *{
@@ -21,15 +24,13 @@ html{
 body{
     padding: 0;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--font1);
     overflow-x: hidden;
     background: var(--color4);
     color: var(--color5);
 }
 
 body.dark-mode {
-    --color1: #7c93ff;
-    --color2: #c3d0ff;
     --color3: #ffd166;
     --color4: #0f1726;
     --color5: #e7eefb;
@@ -46,7 +47,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 
- header, section, article{
+ header, section, article, main{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,8 +141,8 @@ body::-webkit-scrollbar{
 
 .cns h3{
     font-size: clamp(1rem, 2rem, 2rem);
-    color: var(--color2);
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color1);
+    font-family: var(--font2);
     text-align: center;
 }
 
@@ -211,7 +212,7 @@ text-decoration: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: var(--color2);
+    background: var(--color1);
     width: 30%;
     height: 30vw;
     z-index: 1000;
@@ -378,5 +379,17 @@ text-decoration: none;
 .nxcX{
     display: none;
 }
+
+  }
+
+  @media (min-width:1500px){
+    
+    .des{
+        width: 40%;
+    }
+    .des p{
+        font-size: clamp(1rem, 1.35vw, 2rem);
+    }
+
 
   }

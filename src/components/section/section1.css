@@ -23,7 +23,7 @@ figure {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 0.1vw solid rgb(62, 62, 62);
+  border: 0.1vw solid var(--color1);
   padding-bottom: 3vw;
   border-radius: 1vw;
   position: relative;
@@ -32,8 +32,7 @@ figure {
 
 .imgdes2:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(78, 149, 255, 0.25);
-  border-color: #4e95ff;
+  box-shadow: 0 6px 12px var(--color1);
 }
 
 .imgs1 {
@@ -43,19 +42,19 @@ figure {
   margin-bottom: 0.5vw;
   border-top-left-radius: 1vw;
   border-top-right-radius: 1vw;
-  border-bottom: 0.1vw solid #4e95ff;
+  border-bottom: 0.1vw solid var(--color1);
 }
 .heading3 {
   font-size: 1.5rem;
   text-align: center;
-  color: #4e95ff;
+  color: var(--color1);
   margin-bottom: 1vw;
-  font-family: unset;
+  font-family: var(--font3);
   width: 85%;
   text-align: left;
 }
 .paragraft1 {
-  font-family: unset;
+  font-family: var(--font3);
   text-align: center;
   margin: 0;
   font-size: 0.9rem;
@@ -64,9 +63,9 @@ figure {
 }
 
 .heading2 {
-  font-family: unset;
+  font-family: var(--font3);
   font-size: 1.2rem;
-  background: #4e95ff;
+  background: var(--color1);
   color: white;
   padding: 1.5vw;
   border-radius: 0.7vw;
@@ -74,17 +73,19 @@ figure {
 }
 
 .section-intro {
-  font-family: unset;
+  font-family: var(--font3);
   font-size: 1rem;
   color: var(--color5);
   line-height: 1.6;
   margin: 0;
   padding: 0 1vw 3vw 0;
   width: 90%;
+  text-align: justify;
+  text-indent: 1.5rem;
 }
 
 .h4sec1 {
-  font-family: unset;
+  font-family: var(--font3);
   font-size: 1.5rem;
   margin-bottom: 1vw;
   margin-top: 3vw;
@@ -110,63 +111,17 @@ figure {
   display: block;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #4e95ff;
-  font-family: unset;
+  color: var(--color1);
+  font-family: var(--font3);
 }
 
 .stat-label {
-  font-family: unset;
+  font-family: var(--font3);
   font-size: 0.95rem;
   color: var(--color5);
   margin: 0.5vw 0 0 0;
 }
 
-.cta-section {
-  background: linear-gradient(135deg, #4e95ff, #2563eb);
-  color: white;
-  padding: 4vw;
-  border-radius: 1vw;
-  text-align: center;
-  margin-top: 5vw;
-}
-
-.cta-title {
-  font-family: unset;
-  font-size: 1.8rem;
-  margin: 0 0 1.5vw 0;
-  font-weight: 700;
-}
-
-.cta-description {
-  font-family: unset;
-  font-size: 1rem;
-  margin: 0 0 2vw 0;
-  line-height: 1.6;
-  opacity: 0.95;
-}
-
-.cta-button {
-  padding: 1.2vw 2.5vw;
-  font-size: 1rem;
-  background: var(--color4);
-  color: var(--color1);
-  border: none;
-  border-radius: 0.7vw;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  background: #f0f7ff;
-}
-
-.cta-button:active {
-  transform: translateY(-1px);
-}
 .nxcs1 {
   width: 10%;
   position: absolute;
@@ -221,6 +176,12 @@ figure {
   border-radius: 50%;
 }
 
+.hrs1{
+  height: 0.2vw;
+  background: var(--color1);
+  width: 90%;
+  margin-bottom: 3vw;
+}
 
 @media (max-width: 768px) {
   .imgdes1 {
@@ -229,6 +190,10 @@ figure {
     width: 100%;
     margin-bottom: 0;
     margin-top: 0;
+  }
+
+  .hrs1{
+    margin-bottom: 7vw;
   }
 
   .imgdes2 {

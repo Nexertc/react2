@@ -48,8 +48,10 @@ export default function App() {
   return (
     <div className="konten">
       <Header />
+      <main>
       <Section2 />
       <Section1 />
+      </main>
       <Footer />
     </div> // <---  classname konten
   );

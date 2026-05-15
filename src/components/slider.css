@@ -1,10 +1,4 @@
-:root {
-  --color1: #4e95ff;
-  --color2: #454afa;
-  --color3: gold;
-  --color4: white;
-  --color5: black;
-}
+
 
 .kontenS {
   display: flex;
@@ -85,7 +79,7 @@
 .hrS {
   width: 95%;
   height: 0.15vw;
-  background: var(--color2);
+  background: var(--color1);
 }
 
 @media (max-width: 768px) {
@@ -98,7 +92,7 @@
   }
 
   .kontenS {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .containerS {

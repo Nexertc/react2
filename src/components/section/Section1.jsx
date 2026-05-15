@@ -17,8 +17,13 @@ export default function Section1() {
       <article>
         <header>
           <h2 className="heading2">Hal hal yang sudah saya pelajari</h2>
-           <p className="section-intro">Pengalaman belajar dan pengembangan skill yang telah saya capai dalam perjalanan menjadi web developer. Setiap teknologi dipilih untuk memberikan nilai maksimal dalam membangun aplikasi web yang responsif dan user-friendly.</p>
+          <p className="section-intro">
+            Belajar otodidak dari kelas 10 smk, mulai dari html, css, js dasar
+            sampai menengah ke react dan php. Dan teknologi yang lainnya seperti
+            git dan github. Saya lebih menyukai ke arah Frontend developer
+          </p>
         </header>
+        <hr className="hrs1" />
         <section>
           <section className="imgdes1">
             <article className="imgdes2 fade-up">
@@ -62,9 +67,11 @@ export default function Section1() {
                 <img src={nxc} alt="nexertc" className="nxcs1" />
               </footer>
             </article>
-         
 
-      <article className="imgdes2 fade-up" onClick={() => navigate("/Htmljs")}>
+            <article
+              className="imgdes2 fade-up"
+              onClick={() => navigate("/Htmljs")}
+            >
               <figure>
                 <img className="imgs1" src={btnjs} alt="btnjs" />
               </figure>
@@ -94,8 +101,11 @@ export default function Section1() {
 
             <article className="imgdes2 fade-up">
               <figure>
-
-                <img className="imgs1" src=  "https://media2.dev.to/dynamic/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fjplnld3gptkremcqom5q.png" alt="react" />
+                <img
+                  className="imgs1"
+                  src="https://media2.dev.to/dynamic/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fjplnld3gptkremcqom5q.png"
+                  alt="react"
+                />
               </figure>
               <h3 className="heading3">React</h3>
               <p className="paragraft1">
@@ -121,37 +131,35 @@ export default function Section1() {
               </footer>
             </article>
           </section>
-           <article className="artcG">
-        <section className="desG">
-         
-          <img
-            className="imgG1"
-            src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif"
-          />
-          <img
-            className="imgG1"
-            src="https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif"
-          />
-          <img
-            className="imgG1"
-            src="https://media.giphy.com/media/3oKIPtjElfqwMOTbH2/giphy.gif"
-          />
-          <img
-            className="imgG1"
-            src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
-          />
-          <img
-            className="imgG1"
-            src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif"
-          />
-          <img
-            className="imgG1"
-            src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif"
-          />
+          <article className="artcG">
+            <section className="desG">
+              <img
+                className="imgG1"
+                src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif"
+              />
+              <img
+                className="imgG1"
+                src="https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif"
+              />
+              <img
+                className="imgG1"
+                src="https://media.giphy.com/media/3oKIPtjElfqwMOTbH2/giphy.gif"
+              />
+              <img
+                className="imgG1"
+                src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+              />
+              <img
+                className="imgG1"
+                src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif"
+              />
+              <img
+                className="imgG1"
+                src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif"
+              />
+            </section>
+          </article>
         </section>
-      </article>
-        </section>
-
       </article>
     </div>
   );

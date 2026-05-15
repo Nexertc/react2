@@ -35,7 +35,7 @@
 }
 
 .h4section2 {
-  font-family: unset;
+  font-family: var(--font3);
   font-size: 1.2rem;
   background: #4e95ff;
   color: white;
@@ -112,7 +112,7 @@
 
 .pglink {
   display: inline-block;
-  background: #454afa;
+  background: var(--color1);
   color: white;
   margin: 0;
   padding: 0.8vw;
@@ -121,7 +121,7 @@
 }
 
 .boxh3 {
-  font-family: unset;
+  font-family: var(--font3);
   font-size: 1.4rem;
   border-bottom: 0.2vw solid #4e95ff;
   width: 100%;
