@@ -85,7 +85,7 @@ const tags2 = [
       </div>
 
       <article className="containerS fade-up">
-        <h3 className="headingS">Hyperlink Tag</h3>
+        <h3 className="headingS">Hyperlink Tag:</h3>
         <hr className="hrS" />
 
 <ul className="box2s2">

@@ -19,8 +19,8 @@ export default function Section1() {
           <h2 className="heading2">Hal hal yang sudah saya pelajari</h2>
           <p className="section-intro">
             Belajar otodidak dari kelas 10 smk, mulai dari html, css, js dasar
-            sampai menengah ke react dan php. Dan teknologi yang lainnya seperti
-            git dan github. Saya lebih menyukai ke arah Frontend developer
+            sampai menengah ke react dan php, dan teknologi yang lainnya seperti
+            git dan github. Saya lebih menyukai ke arah Frontend developer.
           </p>
         </header>
         <hr className="hrs1" />

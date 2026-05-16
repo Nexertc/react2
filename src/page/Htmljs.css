@@ -102,7 +102,7 @@
 
 /* isi code */
 .materi-card code {
-  font-family: monospace;
+  font-family: var(--font5);
   font-size: 14px;
   color: #0b1a3a; /* hampir putih biar kontras */
   line-height: 1.6;

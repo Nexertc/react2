@@ -136,7 +136,7 @@ figure {
   padding: 0.5vw 1.2vw;
   font-size: 1rem;
   font-weight: 700;
-  color: var(--color5);
+  color: var(--still1);
   background: linear-gradient(135deg, #fff8dc, #f5e6b3, #d4af37);
   border: 0.1vw solid #b8962e;
   border-radius: 12px;
@@ -199,7 +199,7 @@ figure {
   .imgdes2 {
     width: 90%;
     margin-bottom: 13vw;
-    border: 0.1vw solid rgb(62, 62, 62);
+    border: 0.1vw solid var(--color1);
     padding-bottom: 8vw;
     border-radius: 2vw;
   }
