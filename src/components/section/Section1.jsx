@@ -20,7 +20,8 @@ export default function Section1() {
           <p className="section-intro">
             Belajar otodidak dari kelas 10 smk, mulai dari html, css, js dasar
             sampai menengah ke react dan php, dan teknologi yang lainnya seperti
-            git dan github. Saya lebih menyukai ke arah Frontend developer.
+            git dan github. Saya lebih menyukai ke arah Frontend developer. Di bawah ini adalah 
+            hal-hal yang sudah saya pelajari seperti library, tools, design, dll.
           </p>
         </header>
         <hr className="hrs1" />
