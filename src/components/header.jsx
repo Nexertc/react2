@@ -19,7 +19,7 @@ export default function Header() {
 
   function klikmedia() {
     setShowPopup(!showPopup);
-    document.body.style.overflow = showPopup ? "auto" : "hidden";
+    document.body.style.overflowY = showPopup ? "auto" : "hidden";
   }
 
   return (

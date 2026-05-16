@@ -133,6 +133,7 @@ export default function Section1() {
               </footer>
             </article>
           </section>
+          
           <article className="artcG">
             <section className="desG">
               <img

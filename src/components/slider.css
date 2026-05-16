@@ -101,6 +101,7 @@
   .containerS {
     width: 95%;
     border-radius: 2vw;
+    height: auto;
   }
 }
 

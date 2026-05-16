@@ -89,17 +89,6 @@
   color: var(--color5);
 }
 
-.box1s2 {
-  width: 80%;
-  border: 0.2vw solid #4e95ff;
-  padding: 2vw;
-  display: flex;
-  gap: 1vw;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  border-radius: 0.7vw;
-}
 .box2s2 {
   display: flex;
   gap: 1vw;
@@ -178,18 +167,6 @@
   
   .imgG1{
     height: 17vw;
-  }
-
-  .box1s2 {
-    padding: 3vw;
-    gap: 3vw;
-    width: 90%;
-    margin-top: 15vw;
-    margin-bottom: 15vw;
-  }
-
-  .box2s2 {
-    gap: 3vw;
   }
 
   .boxh3 {
