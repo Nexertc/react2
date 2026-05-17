@@ -136,30 +136,12 @@ export default function Section1() {
           
           <article className="artcG">
             <section className="desG">
-              <img
-                className="imgG1"
-                src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif"
-              />
-              <img
-                className="imgG1"
-                src="https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif"
-              />
+           
               <img
                 className="imgG1"
                 src="https://media.giphy.com/media/3oKIPtjElfqwMOTbH2/giphy.gif"
               />
-              <img
-                className="imgG1"
-                src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
-              />
-              <img
-                className="imgG1"
-                src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif"
-              />
-              <img
-                className="imgG1"
-                src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif"
-              />
+            
             </section>
           </article>
         </section>

@@ -1,6 +1,3 @@
-/* ========================= */
-/* CYBER / GLASSMORPHISM THEME */
-/* ========================= */
 
 .loading-screen {
   width: 100%;
@@ -17,7 +14,7 @@
   align-items: center;
   flex-direction: column;
 
-background-image: url('../img/coc32hd.png');
+background-image: url('../img/bg15.jpeg');
 background-size: cover;
 background-position: bottom;
 }
@@ -28,25 +25,10 @@ background-position: bottom;
     height: 100%;
     z-index: 1001;
     top: 0;
-    background: var(--still1);
-    opacity: 50%;
+    background: var(--still2);
+    opacity: 10%;
 }
 
-/* garis cyber background */
-.loading-screen::before {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  background-image:
-    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-
-  background-size: 40px 40px;
-
-  animation: bgMove 8s linear infinite;
-}
 
 /* lingkaran glow */
 .loading-screen::after {
@@ -71,67 +53,28 @@ background-position: bottom;
 /* ========================= */
 
 .loading-logo {
-  width: 30%;
+  width: 100%;
+  height: 100%;
   z-index: 2;
-
-  animation:
-    spin3d 3s ease-in-out infinite,
-    float 2s ease-in-out infinite;
 
   filter:
     drop-shadow(0 0 1.5vw var(--color4))
     drop-shadow(0 0 3vw var(--color4));
-
+  position: absolute;
+  border-radius: 50%;
 }
 
-.loading-bar {
-  width: 22%;
-  height: 1vw;
-
-  border-radius: 999px;
-
-  overflow: hidden;
-
-  background: rgba(255,255,255,0.08);
-position: relative;
-bottom: 6vw;
-
-  backdrop-filter: blur(10px);
-}
-
-.loading-progress {
-  width: 0%;
-  height: 100%;
-
-  border-radius: 999px;
-
-  background:
-    linear-gradient(
-      90deg,
-      #4e95ff,
-      #67e8f9,
-      #ffffff,
-      #4e95ff
-    );
-
-  background-size: 300%;
-
-  animation:
-    loading 2.5s linear forwards,
-    shine 1s linear infinite;
-}
 
 /* text */
 .loading-text {
   color: white;
-  font-size: 15px;
+  font-size: clamp(1rem, 2vw, 2.5rem);
   letter-spacing: 5px;
   font-weight: 700;
-position: relative;
-bottom: 6vw;
- 
   animation: textGlow 1.5s ease-in-out infinite;
+  position: absolute;
 }
+
 
 /* ========================= */
 /* ANIMATION */
@@ -146,7 +89,6 @@ bottom: 6vw;
     width: 100%;
   }
 }
-
 @keyframes shine {
   0% {
     background-position: 0%;
@@ -156,7 +98,6 @@ bottom: 6vw;
     background-position: 300%;
   }
 }
-
 @keyframes spin3d {
   0% {
     transform:
@@ -177,7 +118,6 @@ bottom: 6vw;
       rotateY(360deg);
   }
 }
-
 @keyframes float {
   0% {
     translate: 0 0;
@@ -191,7 +131,6 @@ bottom: 6vw;
     translate: 0 0;
   }
 }
-
 @keyframes ringRotate {
   from {
     transform: rotate(0deg);
@@ -201,7 +140,6 @@ bottom: 6vw;
     transform: rotate(360deg);
   }
 }
-
 @keyframes pulseGlow {
   0% {
     scale: 1;
@@ -218,7 +156,6 @@ bottom: 6vw;
     opacity: 0.15;
   }
 }
-
 @keyframes bgMove {
   from {
     transform: translateY(0);
@@ -229,42 +166,75 @@ bottom: 6vw;
   }
 }
 
-@keyframes textGlow {
-  0% {
-    opacity: 0.5;
-    text-shadow: 0 0 5px #4e95ff;
-  }
 
-  50% {
-    opacity: 1;
-    text-shadow:
-      0 0 10px #4e95ff,
-      0 0 20px #4e95ff;
-  }
-
-  100% {
-    opacity: 0.5;
-    text-shadow: 0 0 5px #4e95ff;
-  }
-}
-
-.loading-bar, .loading-logo, .loading-text{
+.loading-logo, .loading-text{
     z-index: 1002;
 }
 
+.lingk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  border: 0.5vw solid transparent; /* border made transparent; SVG stroke becomes visible progress */
+  overflow: visible;
+  position: relative;
+}
+
+/* SVG progress overlay that follows the border of the circle */
+.progress-svg{
+  position: absolute;
+  inset: 0; /* cover the lingk container */
+  width: 100%;
+  height: 100%;
+  z-index: 1003;
+  display: block;
+  pointer-events: none;
+}
+
+.progress-track{
+  fill: none;
+  stroke:var(--color1);
+  stroke-width: 6;
+}
+
+.progress-circle{
+  fill: none;
+  stroke: var(--color4, #4e95ff);
+  stroke-width: 6;
+  stroke-linecap: round;
+  /* circumference for r=54 ≈ 339.292 */
+  stroke-dasharray: 339.292;
+  stroke-dashoffset: 339.292; /* start empty */
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg); /* start at 12 o'clock */
+  animation: progressFill 3.5s ease-in-out forwards;
+}
+
+@keyframes progressFill {
+  0% {
+    stroke-dashoffset: 339.292; /* empty */
+  }
+
+  100% {
+    stroke-dashoffset: 0; /* full circle */
+  }
+}
+
 @media (max-width: 768px) {
-      .loading-screen{
-        height: 169vw;       
-    }
-    .loading-logo{
-        width: 70%;
-    }
+  
+  .lingk{
+    width: 70vw;
+    height: 70vw;
+  }
+  
     .loading-bar{
         width: 50%;
         height: 4vw;
     }
-    .loading-bar, .loading-text{
-        position: relative;
-        bottom: 12vw;
-    }
+  
+    
 }

@@ -9,6 +9,7 @@ import Footer from "./components/footer";
 import Section2 from "./components/section/section2";
 import Header from "./components/header";
 import nxc from "./img/nxc2.png";
+import Loading from "./componentcss/Loading";
 
 export default function App() {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 3500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -53,22 +54,7 @@ useEffect(() => {
   // tampilan loading
   if (loading) {
     return (
-     <div className="loading-screen">
-      <div className="overlaybg"></div>
-  <img
-    src={nxc}
-    alt="logo"
-    className="loading-logo"
-  />
-
-  <div className="loading-bar">
-    <div className="loading-progress"></div>
-  </div>
-
-  <p className="loading-text">
-    LOADING...
-  </p>
-</div>
+   <Loading />
     );
   }
 
