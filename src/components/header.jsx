@@ -29,9 +29,9 @@ export default function Header() {
         <article className="cns">
           <section className="imgd1 fade-up">
             <div className="imglz">
-              <div className="img1">
+              <figure className="img1">
                 <h2 className="h2img1">Nexertc</h2>
-              </div>
+              </figure>
               <img className="nxc" src={nxc} alt="nxc" />
               <div className="overlay"></div>
             </div>
@@ -47,7 +47,7 @@ export default function Header() {
               />
             </section>
           </section>
-          <div className="des fade-up">
+          <section className="des fade-up">
             <h3>Ardeva Alghifari</h3>
             <p>
               Website ini dibuat menggunakan library bernama <b>React JS</b> dan
@@ -103,7 +103,7 @@ export default function Header() {
             </figure>{" "}
             {/* classname imgd2 */}
              <img className="nxcX" src={nxc} alt="nxc" />
-          </div>{" "}
+          </section>{" "}
           {/* classname des */}
         </article>{" "}
         {/* classname cns */}

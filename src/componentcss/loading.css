@@ -1,0 +1,270 @@
+/* ========================= */
+/* CYBER / GLASSMORPHISM THEME */
+/* ========================= */
+
+.loading-screen {
+  width: 100%;
+  height: 100vh;
+
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+background-image: url('../img/coc32hd.png');
+background-size: cover;
+background-position: bottom;
+}
+
+.overlaybg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    top: 0;
+    background: var(--still1);
+    opacity: 50%;
+}
+
+/* garis cyber background */
+.loading-screen::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+  animation: bgMove 8s linear infinite;
+}
+
+/* lingkaran glow */
+.loading-screen::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  background: #4e95ff;
+  border-radius: 50%;
+
+  filter: blur(140px);
+  opacity: 0.2;
+
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.loading-logo {
+  width: 30%;
+  z-index: 2;
+
+  animation:
+    spin3d 3s ease-in-out infinite,
+    float 2s ease-in-out infinite;
+
+  filter:
+    drop-shadow(0 0 1.5vw var(--color4))
+    drop-shadow(0 0 3vw var(--color4));
+
+}
+
+.loading-bar {
+  width: 22%;
+  height: 1vw;
+
+  border-radius: 999px;
+
+  overflow: hidden;
+
+  background: rgba(255,255,255,0.08);
+position: relative;
+bottom: 6vw;
+
+  backdrop-filter: blur(10px);
+}
+
+.loading-progress {
+  width: 0%;
+  height: 100%;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #4e95ff,
+      #67e8f9,
+      #ffffff,
+      #4e95ff
+    );
+
+  background-size: 300%;
+
+  animation:
+    loading 2.5s linear forwards,
+    shine 1s linear infinite;
+}
+
+/* text */
+.loading-text {
+  color: white;
+  font-size: 15px;
+  letter-spacing: 5px;
+  font-weight: 700;
+position: relative;
+bottom: 6vw;
+ 
+  animation: textGlow 1.5s ease-in-out infinite;
+}
+
+/* ========================= */
+/* ANIMATION */
+/* ========================= */
+
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 300%;
+  }
+}
+
+@keyframes spin3d {
+  0% {
+    transform:
+      perspective(1000px)
+      rotateY(0deg);
+  }
+
+  50% {
+    transform:
+      perspective(1000px)
+      rotateY(180deg)
+      scale(1.05);
+  }
+
+  100% {
+    transform:
+      perspective(1000px)
+      rotateY(360deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -10px;
+  }
+
+  100% {
+    translate: 0 0;
+  }
+}
+
+@keyframes ringRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    scale: 1;
+    opacity: 0.15;
+  }
+
+  50% {
+    scale: 1.15;
+    opacity: 0.25;
+  }
+
+  100% {
+    scale: 1;
+    opacity: 0.15;
+  }
+}
+
+@keyframes bgMove {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(40px);
+  }
+}
+
+@keyframes textGlow {
+  0% {
+    opacity: 0.5;
+    text-shadow: 0 0 5px #4e95ff;
+  }
+
+  50% {
+    opacity: 1;
+    text-shadow:
+      0 0 10px #4e95ff,
+      0 0 20px #4e95ff;
+  }
+
+  100% {
+    opacity: 0.5;
+    text-shadow: 0 0 5px #4e95ff;
+  }
+}
+
+.loading-bar, .loading-logo, .loading-text{
+    z-index: 1002;
+}
+
+@media (max-width: 768px) {
+      .loading-screen{
+        height: 169vw;       
+    }
+    .loading-logo{
+        width: 70%;
+    }
+    .loading-bar{
+        width: 50%;
+        height: 4vw;
+    }
+    .loading-bar, .loading-text{
+        position: relative;
+        bottom: 12vw;
+    }
+}
