@@ -1,62 +1,39 @@
 import "./App.css";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import App2 from "./App2";
-import "./componentcss/loading.css";
 import Section1 from "./components/section/Section1";
 import Footer from "./components/footer";
 import Section2 from "./components/section/section2";
 import Header from "./components/header";
 import nxc from "./img/nxc2.png";
-import Loading from "./componentcss/Loading";
 
 export default function App() {
   const navigate = useNavigate();
-
-  // loading screen
-  const [loading, setLoading] = useState(true);
-
+  // fade up
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3500);
+      const items = document.querySelectorAll(".fade-up");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      items.forEach((item) => observer.observe(item));
+    }, 100);
 
     return () => clearTimeout(timer);
   }, []);
-
-  //fade up 
-useEffect(() => {
-  if (loading) return;
-
-  const timer = setTimeout(() => {
-    const items = document.querySelectorAll(".fade-up");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-      }
-    );
-
-    items.forEach((item) => observer.observe(item));
-  }, 100);
-
-  return () => clearTimeout(timer);
-}, [loading]);
-
-  // tampilan loading
-  if (loading) {
-    return (
-   <Loading />
-    );
-  }
 
   // halaman utama
   return (

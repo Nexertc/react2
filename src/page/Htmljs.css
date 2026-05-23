@@ -85,27 +85,58 @@
 }
 /* container code */
 .materi-card pre {
-  display: flex;
-  overflow-y: auto;
-  background: linear-gradient(135deg, #e0f2fe, #4e95ff);
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
   width: 90%;
-
-  border-top-left-radius: 1vw;
-  border-top-right-radius: 1vw;
-  border: 0.2vw solid #4e95ff;
-
+  padding: 1.2rem 1.5rem;
+  border-radius: 1.2vw;
+  border: 0.15vw solid rgba(78, 149, 255, 0.6);
+  background: linear-gradient(180deg, rgba(7, 16, 42, 0.96), rgba(15, 29, 67, 0.96));
   box-shadow: 0 1vw 2vw rgba(78, 149, 255, 0.2);
   transition: 0.3s;
- 
   margin: 0;
+}
+
+.materi-card pre:hover {
+  transform: translateY(-0.2vw);
+}
+
+.materi-card pre::-webkit-scrollbar {
+  height: 0.5vw;
+}
+
+.materi-card pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2vw;
 }
 
 /* isi code */
 .materi-card code {
-  font-family: var(--font5);
-  font-size: 14px;
-  color: #0b1a3a; /* hampir putih biar kontras */
-  line-height: 1.6;
+  display: block;
+  font-family: var(--font5), Consolas, "Courier New", monospace;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  line-height: 1.7;
+  white-space: pre;
+}
+
+.materi-card .tok-tag {
+  color: #7dd3fc; /* cyan */
+  font-weight: 600;
+}
+
+.materi-card .tok-attr {
+  color: #ffd580; /* warm yellow */
+}
+
+.materi-card .tok-string {
+  color: #9ae6b4; /* green */
+}
+
+.materi-card .tok-comment {
+  color: #94a3b8; /* muted gray */
+  font-style: italic;
 }
 
 /* scrollbar */

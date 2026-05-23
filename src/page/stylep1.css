@@ -1,0 +1,44 @@
+.main1{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: start;
+    justify-content: center;
+}
+
+.sec1h1{
+    display: flex;
+    align-items: start;
+    justify-content: start;   
+    flex-direction: column;
+    width: 50%;
+}
+.sec1h1 h2{
+    font-family: var(--font1);
+    font-size: 2.5vw;
+    color: var(--color1);
+    border-bottom: 0.2vw solid var(--color1);
+    padding-bottom: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+.sec1h1 p{
+    font-size: 1.2vw;
+    color: var(--color5);
+    font-family: var(--font2);
+    text-align: justify;
+    width: 90%;
+    line-height: 1.7;
+    border-bottom: 0.15vw solid var(--color1);
+    padding-bottom: 4vw;
+}
+
+.sec1h2{
+    border-left:0.2vw solid var(--color1);
+    width: 40%;
+    height: 30vw;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
