@@ -15,7 +15,6 @@ return(
   <h4>helo</h4>
  
 <button onClick ={()=> navigate("/")} >klik disini</button>
-
 </div>
 );
 }

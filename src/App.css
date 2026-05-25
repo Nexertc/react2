@@ -12,6 +12,7 @@
     --font3: unset;
     --font4: inherit;
     --font5: monospace;
+    --fontp: "Poppins", sans-serif;;
 }
 
 
@@ -145,11 +146,12 @@ body::-webkit-scrollbar{
     
 }
 
-.cns h3{
-    font-size: clamp(1rem, 2rem, 2rem);
+.cns h2{
+    font-size: clamp(1rem, 2.2vw, 2rem);
     color: var(--color1);
-    font-family: var(--font2);
+    font-family: var(--fontp);
     text-align: center;
+    font-weight: 500;
 }
 
 .des{
@@ -167,7 +169,8 @@ body::-webkit-scrollbar{
 
 .des p{
     text-indent: 1.5rem;
-    font-size: clamp(0.9rem, 1.2vw, 2rem);
+    font-size: clamp(0.9rem, 1vw, 2rem);
+    font-family: var(--fontp);
 }
 
 .cnsbtn{
@@ -329,7 +332,7 @@ text-decoration: none;
         margin-top: 5vw;
     }
 
-    .cns h3{
+    .cns h2{
           font-size: clamp(1rem, 1.5rem, 2rem);
         margin-bottom: 1vw;
         margin-top: 10vw;

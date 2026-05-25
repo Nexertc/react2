@@ -28,7 +28,7 @@ export default function Section1() {
         <hr className="hrs1" />
         <section>
           <section className="imgdes1">
-            <article className="imgdes2 fade-up" onClick={() => navigate("/penjelasan-html")} style={{cursor: 'pointer'}}>
+            <article className="imgdes2 fade-up" onClick={() => navigate("/penjelasan-html")}>
               <figure>
                 <img className="imgs1" src={html5} alt="html5" />
               </figure>

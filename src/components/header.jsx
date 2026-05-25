@@ -30,7 +30,7 @@ export default function Header() {
           <section className="imgd1 fade-up">
             <div className="imglz">
               <figure className="img1">
-                <h2 className="h2img1">Nexertc</h2>
+                <h1 className="h2img1">Nexertc</h1>
               </figure>
               <img className="nxc" src={nxc} alt="nxc" />
               <div className="overlay"></div>
@@ -48,7 +48,7 @@ export default function Header() {
             </section>
           </section>
           <section className="des fade-up">
-            <h3>Ardeva Alghifari</h3>
+            <h2>Ardeva Alghifari</h2>
             <p>
               Website ini dibuat menggunakan library bernama <b>React JS</b> dan
               tols bernama
@@ -56,7 +56,8 @@ export default function Header() {
               sekolah SMK Geo Informatika, dan lulusan dari SMP Negeri 01
               Dramaga lahir pada 28 mei 2009 di Sragen Jawa Tengah. Jika ada
               keperluan dengan saya bisa kunjungi media sosial saya di bawah
-              ini.
+              ini. 
+              
             </p>
             <figure className="imgd2">
               <img className="img2" src={clan} alt="clan" />
