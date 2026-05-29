@@ -59,9 +59,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5vw 3vw;
-    box-sizing: border-box;
-    background: rgba(0,0,0,0.4);
-    backdrop-filter: blur(0.3vw);
+   
+    background: var(--still1);
+    
 }
 
 .footer-bottom p{
@@ -92,6 +92,7 @@
         flex-direction: column;
         gap: 3vw;
         padding: 4vw;
+        margin-top: 0;
     }
 
     .footer-bottom p{
@@ -111,7 +112,7 @@
 
     
     .imgfooter {
-        height: 100vw;
+        height: auto;
     }
 
     .nxcfooter{

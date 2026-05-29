@@ -148,7 +148,7 @@ main {
 }
 
 .cns h2 {
-  font-size: clamp(1rem, 2.2vw, 2rem);
+  font-size: 1.4rem;
   color: var(--color1);
   text-align: center;
   font-weight: 500;
