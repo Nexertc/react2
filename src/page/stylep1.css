@@ -37,7 +37,6 @@
 .cosh1 p{
     font-size: 1.3vw;
     color: var(--color5);
-    font-family: var(--font4);
     text-align: justify;
     width: 95%;
     line-height: 1.9;
@@ -87,7 +86,6 @@
 .scn1 p{
     width: 90%;
     text-align: justify;
-    font-family: var(--font4);
     font-weight: 400;
     font-size: clamp(0.9rem, 1vw, 1.5rem);
 }
@@ -104,7 +102,6 @@
 }
 
 .headerp h1{
-    font-family: var(--font1);
     font-size: 1.7vw;
     color: var(--color1);
     margin: 0.5vw;

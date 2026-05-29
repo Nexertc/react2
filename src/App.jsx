@@ -10,7 +10,10 @@ import Header from "./components/header";
 import nxc from "./img/nxc2.png";
 
 export default function App() {
+  // router 
   const navigate = useNavigate();
+
+
   // fade up
   useEffect(() => {
     const timer = setTimeout(() => {

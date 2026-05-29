@@ -1,6 +1,8 @@
 import "./nav.css";
 import nxc from "../img/nxc.png";
 import { useState, useEffect } from "react";
+import { Menu } from "react-feather";
+import { Moon, Sun } from "react-feather";
 
 export default function Nav({ class1 }) {
   const [open, setOpen] = useState(false);
@@ -23,7 +25,7 @@ export default function Nav({ class1 }) {
   function klik() {
     setOpen(!open);
     document.body.style.overflow = "hidden";
- 
+
     document.body.style.overflowX = "hidden";
   }
 
@@ -39,13 +41,13 @@ export default function Nav({ class1 }) {
 
   return (
     <div className="nav">
-    
-
       <nav className={class1}>
-          <button className="side-menu-btn" onClick={klik}>
-            ☰
-          </button>
-         
+        <button className="side-menu-btn" onClick={klik}>
+          <Menu className="icon1" />
+        </button>
+
+      <h1 className="judulnxc">Ardeva <span>Alghifari</span>.</h1>
+
         <div className="containerlink">
           <a
             className="link1 blog"
@@ -59,18 +61,14 @@ export default function Nav({ class1 }) {
           <a className="link1" href="#sec1">
             <h4>Nexertc</h4>
           </a>
-         
         </div>
-  <button className="theme-btn nxcnav" onClick={toggleTheme}>
-  <img
-    src={
-      darkMode
-        ?  "https://cdn-icons-png.flaticon.com/512/3222/3222800.png"
-        : "https://cdn-icons-png.flaticon.com/512/740/740878.png"
-    }
-    alt="theme icon"
-  />
-</button>
+        <button className="theme-btn nxcnav" onClick={toggleTheme}>
+          {darkMode ? (
+            <Sun className="sun" />
+          ) : (
+            <Moon className="moon" />
+          )}
+        </button>
       </nav>
 
       <aside className={`side-menu ${open ? "side-menu-open" : ""}`}>
@@ -78,7 +76,6 @@ export default function Nav({ class1 }) {
           <a href="https://ardevaalghifari.blogspot.com/">Blog</a>
           <a href="https://sociabuzz.com/ardevanxc/tribe">Dukungan</a>
           <a href="#">Nexertc</a>
-  
         </nav>
       </aside>
 
@@ -86,4 +83,3 @@ export default function Nav({ class1 }) {
     </div>
   );
 }
-

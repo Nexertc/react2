@@ -16,19 +16,38 @@
   z-index: 1001;
 }
 
-.link1 {
-  color: var(--still2);
-  text-decoration: none;
-  font-size: 1.3rem;
-  margin: 1vw;
-  font-weight: 500;
-}
+
 .containerlink {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   right: 10vw;
+}
+
+
+.link1 {
+  color: var(--still2);
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 1vw;
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+.link1:hover{
+  color: var(--still3);
+}
+
+.judulnxc{
+  position: absolute;
+  left: 2vw;
+  font-size: 1.3rem;
+  color: var(--still2);
+}
+
+.judulnxc span{
+  color: var(--still3);
 }
 
 .nxcnav {
@@ -44,7 +63,9 @@
   left: 1vw;
  height: 80%;
  width: 5%;
-  font-size: clamp(1.5vw, 1.5rem, 2rem);
+ display: none;
+ align-items: center;
+ justify-content: center;
   background: var(--still1);
   color: white;
   border: none;
@@ -54,6 +75,11 @@
   z-index: 2000;
   backdrop-filter: blur(6px);
   transition: all 0.25s ease;
+}
+
+.side-menu-btn .icon1{
+ width: 70%;
+ height: 70%;
 }
 
 .side-menu-btn:hover {
@@ -137,30 +163,21 @@ background: none;
 
 }
 
-.theme-btn:hover {
-  transform: translateY(-3px) scale(1.05);
- 
+ .sun, .moon{
+  width: 80%;
+ height: 80%;
+ color: var(--still2);
 }
 
-.theme-btn:active {
-  transform: scale(0.92);
-}
 
-.theme-btn img {
-  width: auto;
-  height: 75%;
-  object-fit: contain;
-
-  transition: transform 0.4s ease;
-}
-
-.theme-btn:hover img {
-  transform: rotate(20deg);
-}
 
 @media (max-width: 768px) {
   .navigasi {
     height: 15vw;
+  }
+
+  .judulnxc{
+    left: 4vw;
   }
 
   .nxcnav {
@@ -179,7 +196,8 @@ background: none;
 
   .link1 {
     font-size: 1.1rem;
-  }
+    display: none;
+  } 
 
   .side-menu-btn {
     left: 3vw;
@@ -202,7 +220,7 @@ background: none;
   }
 
   .side-menu-content a {
-    font-size: 1rem; /* tetap rem */
+    /* font-size: 1rem;  */
     padding: 3vw 3.5vw;
     border-radius: 2vw;
   }

@@ -43,7 +43,6 @@
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    font-family: var(--font2);
     width: 100%;
     text-align: left;
 }
@@ -68,7 +67,6 @@
 .footer-bottom p{
     color: white;
     font-size: 1rem;
-    font-family: var(--font2)
 }
 
 .footer-social{
@@ -97,7 +95,7 @@
     }
 
     .footer-bottom p{
-        font-size: 0.8rem;
+        /* font-size: 0.8rem; */
         text-align: center;
     }
 
@@ -106,10 +104,10 @@
        
         justify-content: center;
     }
-
+/* 
     .footer-social a{
         font-size: 0.7rem;
-    }
+    } */
 
     
     .imgfooter {
@@ -124,9 +122,9 @@
         width: 40%;
     }
 
-    .deslink a{
+    /* .deslink a{
         font-size: 0.9rem;
-    }
+    } */
     .footer-bottom{
         flex-direction: row;
     }

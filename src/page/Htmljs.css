@@ -12,7 +12,6 @@
   justify-content: center;
   gap: 3vw;
   margin-bottom: 7vw;
-  font-family: var(--font3);
 }
 
 .ImgDesH2 {
@@ -114,8 +113,7 @@
 /* isi code */
 .materi-card code {
   display: block;
-  font-family: var(--font5), Consolas, "Courier New", monospace;
-  font-size: 0.95rem;
+ font-size: 0.95rem;
   color: #e2e8f0;
   line-height: 1.7;
   white-space: pre;

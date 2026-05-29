@@ -24,13 +24,13 @@
   }
 
   .ImgDesH2 p {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     width: 95%;
   }
 
   .H3pageJ {
     width: 80%;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     border-radius: 1vw;
     margin-top: 10vw;
   }
@@ -58,13 +58,13 @@
 
   /* judul */
   .materi-card h2 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     margin-bottom: 2vw;
   }
 
   /* paragraf */
   .materi-card p {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
     margin-bottom: 3vw;
     line-height: 1.6;
   }
@@ -77,10 +77,10 @@
     font-size: 0.8rem;
     height: auto;
   }
-
+/* 
   .materi-card code {
     font-size: 0.8rem;
-  }
+  } */
 
   /* scroll horizontal biar aman */
   .materi-card pre {
@@ -92,20 +92,20 @@
   }
   .btnN{
     padding: 2vw;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     border-radius: 1vw;
     width: 20%;
     border: 0.5vw solid white;
   }
   .H4HtmlJS1 {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     margin-bottom: 3vw;
     width: 90%;
     text-align: left;
     color: #4e95ff;
   }
   .P1HtmlJs1 {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     line-height: 1.6;
     width: 90%;
     text-align: left;
