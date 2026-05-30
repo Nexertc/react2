@@ -62,7 +62,7 @@ export default function Nav({ class1 }) {
             <h4>Nexertc</h4>
           </a>
         </div>
-        <button className="theme-btn nxcnav" onClick={toggleTheme}>
+        <button className="theme-btn" onClick={toggleTheme}>
           {darkMode ? (
             <Sun className="sun" />
           ) : (

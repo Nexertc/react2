@@ -1,4 +1,3 @@
-
 .navigasi {
   background: var(--color1);
   height: 5.5vw;
@@ -16,7 +15,6 @@
   z-index: 1001;
 }
 
-
 .containerlink {
   display: flex;
   align-items: center;
@@ -24,7 +22,6 @@
   position: absolute;
   right: 10vw;
 }
-
 
 .link1 {
   color: var(--still2);
@@ -35,55 +32,24 @@
   transition: 0.4s;
 }
 
-.link1:hover{
+.link1:hover {
   color: var(--still3);
 }
 
-.judulnxc{
+.judulnxc {
   position: absolute;
   left: 2vw;
   font-size: 1.3rem;
   color: var(--still2);
 }
 
-.judulnxc span{
+.judulnxc span {
   color: var(--still3);
 }
 
-.nxcnav {
-  height: 80%;
-  width: auto;
-  border-radius: 0.5vw;
-  position: absolute;
-  right: 2vw;
-}
 
 .side-menu-btn {
-  position: absolute;
-  left: 1vw;
- height: 80%;
- width: 5%;
- display: none;
- align-items: center;
- justify-content: center;
-  background: var(--still1);
-  color: white;
-  border: none;
-  border-radius: 0.4vw;
- 
-  cursor: pointer;
-  z-index: 2000;
-  backdrop-filter: blur(6px);
-  transition: all 0.25s ease;
-}
-
-.side-menu-btn .icon1{
- width: 70%;
- height: 70%;
-}
-
-.side-menu-btn:hover {
-  transform: scale(1.05);
+  display: none;
 }
 
 .side-menu {
@@ -149,34 +115,33 @@
 }
 
 .theme-btn {
- 
   border: none;
-  border-radius: 14px;
-background: none;
+  background: none;
   display: flex;
   align-items: center;
   justify-content: center;
-
+height: 80%;
+  width: auto;
+  border-radius: 0.5vw;
+  position: absolute;
+  right: 2vw;
   cursor: pointer;
-
   transition: all 0.25s ease;
-
 }
 
- .sun, .moon{
+.sun,
+.moon {
   width: 80%;
- height: 80%;
- color: var(--still2);
+  height: 80%;
+  color: var(--still2);
 }
-
-
 
 @media (max-width: 768px) {
   .navigasi {
     height: 15vw;
   }
 
-  .judulnxc{
+  .judulnxc {
     left: 4vw;
   }
 
@@ -197,12 +162,29 @@ background: none;
   .link1 {
     font-size: 1.1rem;
     display: none;
-  } 
+  }
 
   .side-menu-btn {
-    left: 3vw;
-    width: 10%;
-    border-radius: 2vw;
+    position: absolute;
+    right: 2vw;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 0.4vw;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.25s ease;
+  }
+
+  .side-menu-btn .icon1 {
+    width: 80%;
+    height: 80%;
+    stroke-width: 2;
   }
 
   .side-menu {
@@ -229,17 +211,16 @@ background: none;
     background: var(--color6);
     transform: scale(0.98);
   }
-
+  .theme-btn{
+    right: 16vw;
+  }
 }
 
-
-  @media (min-width:1500px){
-    .navigasi{
-        height: 4.5vw;
-        
-    }
-    .link1{
-      font-size: 1.5rem;
-    }
-
+@media (min-width: 1500px) {
+  .navigasi {
+    height: 4.5vw;
   }
+  .link1 {
+    font-size: 1.5rem;
+  }
+}

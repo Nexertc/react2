@@ -9,6 +9,7 @@ import nxc from "../img/nxc2.png";
 import { useState, useEffect } from "react";
 import Nav from "../components/nav";
 import "../components/nav.css";
+import { Youtube } from "react-feather";
 
 export default function Header() {
   function bukaLink(url) {
@@ -31,7 +32,7 @@ export default function Header() {
           <section className="imgd1 fade-up">
             <div className="imglz">
               <figure className="img1">
-                <h1 className="h2img1">Nexertc</h1>
+                <h1 className="h2img1">Ardeva <span>Alghifari</span></h1>
               </figure>
               <img className="nxc" src={nxc} alt="nxc" />
               <div className="overlay"></div>
@@ -49,7 +50,7 @@ export default function Header() {
             </section>
           </section>
           <section className="des fade-up">
-            <h2>Ardeva Alghifari</h2>
+            <h2>Ardeva <span>Alghifari</span>.</h2>
             <p>
               Website ini dibuat menggunakan library bernama <b>React JS</b> dan
               tols bernama
@@ -81,16 +82,10 @@ export default function Header() {
                 onClick={() => bukaLink("https://github.com/Nexertc")}
               />
 
-              <img
-                className="img2"
-                src={yt}
-                alt="yt"
-                onClick={() =>
-                  bukaLink(
-                    "https://youtube.com/@beabandipr_19jt?si=lC3ickwYRK6a4w3L",
-                  )
-                }
-              />
+                <a href="" className="img2">
+                   <Youtube className="icon2 " />
+                </a>
+           
 
               <img
                 className="img2"

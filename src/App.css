@@ -18,6 +18,7 @@
 
 * {
   box-sizing: border-box;
+  
 }
 
 html {
@@ -31,6 +32,7 @@ body {
   overflow-x: hidden;
   background: var(--color4);
   color: var(--color5);
+  text-decoration: none;
 }
 
 body.dark-mode {
@@ -86,6 +88,11 @@ main {
 
 .img2 {
   width: 10%;
+}
+ .icon2{
+  width: 100%;
+  height: 100%;
+  color: var(--still3);
 }
 
 .nxc {
@@ -147,11 +154,14 @@ main {
   gap: 3vw;
 }
 
-.cns h2 {
+.cns .des h2 {
   font-size: 1.4rem;
   color: var(--color1);
   text-align: center;
-  font-weight: 500;
+}
+
+.cns .des h2 span{
+  color: var(--still3);
 }
 
 .des {
@@ -257,9 +267,11 @@ main {
   transform: translateY(0);
 }
 
+
+
 @media (max-width: 768px) {
   html {
-    font-size: 90%;
+    font-size: 80%;
   }
   .konten {
     margin-top: 0;
@@ -274,12 +286,15 @@ main {
   }
 
   .h2img1 {
-    color: gold;
+    color: var(--still2);
     /* font-size: 1.5rem; */
     position: absolute;
     top: 50vw;
     z-index: 998;
     display: block;
+  }
+  .h2img1 span{
+    color: var(--color1);
   }
 
   .img2 {
@@ -295,7 +310,7 @@ main {
   .containerbtn {
     flex-direction: row;
     position: absolute;
-    top: 77vw;
+    top: 70vw;
     gap: 3vw;
   }
 
