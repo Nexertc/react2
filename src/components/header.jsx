@@ -9,7 +9,7 @@ import nxc from "../img/nxc2.png";
 import { useState, useEffect } from "react";
 import Nav from "../components/nav";
 import "../components/nav.css";
-import { Youtube } from "react-feather";
+import { Youtube, GitHub, Instagram } from "react-feather";
 
 export default function Header() {
   function bukaLink(url) {
@@ -32,7 +32,7 @@ export default function Header() {
           <section className="imgd1 fade-up">
             <div className="imglz">
               <figure className="img1">
-                <h1 className="h2img1">Ardeva <span>Alghifari</span></h1>
+                <h1 className="h2img1">Ardeva <span>Alghifari</span>.</h1>
               </figure>
               <img className="nxc" src={nxc} alt="nxc" />
               <div className="overlay"></div>
@@ -64,29 +64,20 @@ export default function Header() {
             <figure className="imgd2">
               <img className="img2" src={clan} alt="clan" />
 
-              <img
-                className="img2"
-                src={ig}
-                alt="ig"
-                onClick={() =>
-                  bukaLink(
-                    "https://www.instagram.com/avealgh?igsh=MTc5Z2dtMWtkMzFsbQ==",
-                  )
-                }
-              />
 
-              <img
-                className="img2"
-                src={github}
-                alt="github"
-                onClick={() => bukaLink("https://github.com/Nexertc")}
-              />
+
+                <a href="https://www.instagram.com/avealgh?igsh=MTc5Z2dtMWtkMzFsbQ==" className="img2">
+                   <Instagram className="icon2 " />
+                </a>
 
                 <a href="" className="img2">
                    <Youtube className="icon2 " />
                 </a>
-           
 
+                  <a href="https://github.com/Nexertc" className="img2">
+                   <GitHub className="icon2 " />
+                </a>
+           
               <img
                 className="img2"
                 src={tiktok}

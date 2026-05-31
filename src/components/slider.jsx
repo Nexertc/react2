@@ -5,6 +5,7 @@ import js from "../img/javascript.png";
 import ardeva from "../img/ardeva.png";
 import space from "../img/space.webp";
 import nxcX from "../img/nxc2.png";
+import { GitHub, Figma, Layout } from "react-feather";
 
 export default function Slider() {
   const images = [
@@ -12,7 +13,7 @@ export default function Slider() {
     ardeva,
     "https://media.licdn.com/dms/image/v2/D4E12AQEP1Ce5MUm5pw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1687871753149?e=2147483647&v=beta&t=cgEyXmxhvO5EAqwnTBx8sLxQNZfbFO9IdH9UVM4JLiE",
     js,
-    space
+    space,
   ];
 
   const [index, setIndex] = useState(0);
@@ -39,24 +40,34 @@ export default function Slider() {
 
     return () => clearInterval(interval);
   }, [direction, images.length]);
-
   const tags1 = [
-  ["React", "https://react.dev"],
-  ["UI Design", "https://figma.com"],
-  ["My Github", "https://github.com/Nexertc"],
-  ["Portfolio", "https://nexertc.vercel.app"],
-];
+    ["React", "https://react.dev"],
+    ["UI Design", "https://figma.com"],
+    ["My Github ", "https://github.com/Nexertc"],
+    [
+      <>
+      Website <Layout className="iconS" />
+      </>
+      , "https://nexertc.vercel.app"],
+  ];
 
-const tags2 = [
-  ["ReactJS", "https://react.dev"],
-  ["Figma App", "https://figma.com"],
-  ["GitHub Profile", "https://github.com/Nexertc"],
-  ["Tailwind CSS", "https://tailwindcss.com"],
-  ["Vite Build Tool", "https://vitejs.dev"],
+  const tags2 = [
+    ["ReactJS", "https://react.dev"],
+    [
+      <>
+      Figma <Figma className="iconS" />
+      </>,
+      , "https://figma.com"],
+    [
+      <>
+        GitHub Profile <GitHub className="iconS" />
+      </>,
+      "https://github.com/Nexertc",
+    ],
+    ["Tailwind CSS", "https://tailwindcss.com"],
+    ["Vite Build Tool", "https://vitejs.dev"],
     ["JavaScript", "https://developer.mozilla.org/en-US/docs/Web/JavaScript"],
-];
-
-
+  ];
 
   return (
     <div className="kontenS">
@@ -72,56 +83,56 @@ const tags2 = [
           ))}
         </div>
 
-  {/* DOTS */}
-  <div className="dots">
-    {images.map((_, i) => (
-      <button
-        key={i}
-        className={`dot ${index === i ? "active" : ""}`}
-        onClick={() => setIndex(i)}
-      ></button>
-    ))}
-  </div>
+        {/* DOTS */}
+        <div className="dots">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              className={`dot ${index === i ? "active" : ""}`}
+              onClick={() => setIndex(i)}
+            ></button>
+          ))}
+        </div>
       </div>
 
       <article className="containerS fade-up">
         <h3 className="headingS">Hyperlink Tag:</h3>
         <hr className="hrS" />
 
-<ul className="box2s2">
-  {tags1.map(([text, url]) => (
-    <li key={text}>
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="pglink"
-      >
-        #{text}
-      </a>
-    </li>
-  ))}
-</ul>
+        <ul className="box2s2">
+          {tags1.map(([content, url], index) => (
+            <li key={index}>
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pglink"
+              >
+                #{content}
+              </a>
+            </li>
+          ))}
+        </ul>
 
-      <ul className="box2s2">
-  {tags2.map(([text, url]) => (
-    <li key={text}>
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="pglink"
-      >
-        #{text}
-      </a>
-    </li>
-  ))}
-</ul>
+        <ul className="box2s2">
+          {tags2.map(([content, url], index) => (
+            <li key={index}>
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pglink"
+              >
+                #{content}
+              </a>
+            </li>
+          ))}
+        </ul>
         <img
           className="imgf"
           src="https://skillicons.dev/icons?i=html,css,js,php,figma,git,github,vscode,react,nodejs,windows,canva&perline=6"
         />
-           <img className="nxcX" src={nxcX} alt="nxc" />
+        <img className="nxcX" src={nxcX} alt="nxc" />
       </article>
     </div>
   );

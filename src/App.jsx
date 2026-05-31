@@ -6,13 +6,13 @@ import App2 from "./App2";
 import Section1 from "./components/section/Section1";
 import Footer from "./components/footer";
 import Section2 from "./components/section/section2";
+import Section3 from "./components/section/section3";
 import Header from "./components/header";
 import nxc from "./img/nxc2.png";
 
 export default function App() {
-  // router 
+  // router
   const navigate = useNavigate();
-
 
   // fade up
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function App() {
         },
         {
           threshold: 0.1,
-        }
+        },
       );
 
       items.forEach((item) => observer.observe(item));
@@ -44,8 +44,9 @@ export default function App() {
       <Header />
 
       <main>
-        <Section2 />
         <Section1 />
+        <Section2 />
+        <Section3 />
       </main>
 
       <Footer />
