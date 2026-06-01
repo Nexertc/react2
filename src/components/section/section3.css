@@ -37,3 +37,14 @@
 .lokasi article h5 span{
     color: var(--color5);
 }
+
+
+@media (max-width: 768px){
+  .lokasi{
+    flex-direction: column;
+  }
+  .lokasi iframe{
+    flex: none;
+    height: 60vw;
+  }
+}

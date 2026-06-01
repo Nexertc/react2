@@ -9,6 +9,7 @@ import Section2 from "./components/section/section2";
 import Section3 from "./components/section/section3";
 import Header from "./components/header";
 import nxc from "./img/nxc2.png";
+import Form from "./components/Form";
 
 export default function App() {
   // router
@@ -47,6 +48,7 @@ export default function App() {
         <Section1 />
         <Section2 />
         <Section3 />
+        <Form />
       </main>
 
       <Footer />

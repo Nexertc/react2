@@ -16,7 +16,7 @@ export default function PenjelasanHtml() {
     <div className="konten KontenP1">
       <Nav class1="navigasi" />
       <ScrollToTop />
-      <main className="main1">
+      <article className="articleH">
         <article className="sec1h1">
           <header className="headerp">
   
@@ -36,11 +36,11 @@ export default function PenjelasanHtml() {
             </p>
 
             <hr className="garis1" />
-        <img src={nxc} alt="nxc" />
+        <figure><img src={nxc} alt="nxc" /></figure>
            
           </section>
 
-            <img className="imgsh1" src={html5} alt="html5" />
+            {/* <img className="imgsh1" src={html5} alt="html5" /> */}
          
         </article>
 
@@ -48,17 +48,28 @@ export default function PenjelasanHtml() {
            <section className="scn1">
             <img className="imgsec1h2" src={code1} alt="html" />
           <p>
-            Itu adalah sturktur dasar HTML dan tag h1 digunakan 
-            untuk membuat judul pada halaman sebuah website.
+            Itu adalah struktur dasar HTML yang membentuk kerangka halaman.
+            Setiap elemen HTML memiliki fungsi khusus, seperti paragraf, judul,
+            dan tautan. Struktur ini membuat konten menjadi rapi, teratur,
+            dan mudah dipahami oleh browser.
           </p>
-         
+          <p>
+            Dengan HTML, kita dapat menambahkan teks, gambar, dan tautan sehingga
+            halaman website dapat menampilkan informasi secara jelas kepada
+            pengguna.
+          </p>
            </section>
 
           <section className="scn1">
-            <img className="imgsec1h2" src={code1} alt="html" />
+            <img src={code1} alt="html" />
           <p>
-            Itu adalah sturktur dasar HTML dan tag h1 digunakan 
-            untuk membuat judul pada halaman sebuah website.
+            Itu adalah struktur dasar HTML dan tag h1 digunakan untuk membuat
+            judul penting pada halaman sebuah website.
+          </p>
+          <p>
+            Tag h1 biasanya hanya boleh digunakan satu kali dalam satu halaman.
+            Penggunaan yang tepat membantu mesin pencari memahami topik utama
+            halaman tersebut.
           </p>
          
            </section>
@@ -66,14 +77,19 @@ export default function PenjelasanHtml() {
            <section className="scn1">
             <img className="imgsec1h2" src={code1} alt="html" />
           <p>
-            Itu adalah sturktur dasar HTML dan tag h1 digunakan 
-            untuk membuat judul pada halaman sebuah website.
+            Selain tag h1, HTML juga menyediakan banyak tag lain seperti h2,
+            h3, p, ul, ol, dan div untuk membantu menyusun konten dengan
+            lebih baik.
+          </p>
+          <p>
+            Kombinasi tag-tag ini memungkinkan halaman menjadi mudah dinavigasi
+            dan tampilan informasi menjadi lebih menarik.
           </p>
          
            </section>
 
         </article>
-      </main>
+      </article>
 
       <Footer />
     </div>
