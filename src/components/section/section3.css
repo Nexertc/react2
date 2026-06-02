@@ -1,9 +1,17 @@
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5vw;
+}
+
 .lokasi {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 90%;
-  margin-bottom: 7vw;
+  margin-bottom: 3vw;
   gap: 3vw;
 }
 
@@ -39,6 +47,113 @@
 }
 
 
+/* FORM JSX */
+
+.form-container {
+  display: flex;
+
+  width: 90%;
+  height: 30vw;
+  background: var(--color4);
+  border-radius: 1rem;
+  border: 0.1vw solid var(--color1);
+  overflow: auto;
+  padding-right: 3vw;
+  gap: 3vw;
+}
+
+.form-container article{
+  display: flex;
+  flex: 1.4;
+  position: relative;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 1rem;
+}
+
+.form-container form h6{
+  font-size: 1.3rem;
+  color: var(--color5);
+  margin: 2vw;
+  width: 100%;
+  text-align: left;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 0.1vw solid var(--color1);
+  border-radius: 0.6rem;
+}
+
+.form-container input:focus {
+  border-color: var(--color5);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  background: var(--color1);
+  color: white;
+  transition: 0.3s;
+}
+
+ .btn-success{
+  background: #41e541;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  transform: translateY(-0.15rem);
+}
+
+.imgform{
+  background-image: url('../../img/coc7.jpeg');
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 222;
+}
+
+.form-container article h6{
+  color: var(--color1);
+  position: absolute;
+  z-index: 224;
+  font-size: 2rem;
+}
+
+.form-container article h6 span{
+color: var(--still2);
+}
+
+.overlayform{
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: 40%;
+  z-index: 223;
+}
+
+
 @media (max-width: 768px){
   .lokasi{
     flex-direction: column;
@@ -46,5 +161,24 @@
   .lokasi iframe{
     flex: none;
     height: 60vw;
+  }
+
+  /* =========== FORM =========== */
+
+  .form-container{
+    flex-direction: column;
+    height: auto;
+    padding-right: 0;
+    padding-bottom: 3vw;
+  }
+
+  .form-container article{
+    flex: none;
+    height: 50vw;
+  }
+ 
+  .form-container form{
+    flex: none;
+    padding: 3vw;
   }
 }

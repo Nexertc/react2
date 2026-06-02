@@ -50,7 +50,7 @@ export default function Section1() {
               <h3 className="heading3">CSS</h3>
               <p className="paragraft1">
                 Cascading Style Sheets, digunakan untuk mengatur tampilan
-                website.
+                dari warna, layout dll pada sebuah halaman website.
               </p>
               <footer>
                 <img src={nxc} alt="nexertc" className="nxcs1" />

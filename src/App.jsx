@@ -48,7 +48,6 @@ export default function App() {
         <Section1 />
         <Section2 />
         <Section3 />
-        <Form />
       </main>
 
       <Footer />
