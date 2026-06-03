@@ -90,6 +90,7 @@ export default function Slider() {
               key={i}
               className={`dot ${index === i ? "active" : ""}`}
               onClick={() => setIndex(i)}
+              aria-label="slide"
             ></button>
           ))}
         </div>
@@ -131,7 +132,8 @@ export default function Slider() {
         <img
           className="imgf"
           src="https://skillicons.dev/icons?i=html,css,js,php,figma,git,github,vscode,react,nodejs,windows,canva&perline=6"
-        />
+          alt="icons"
+           />
         <img className="nxcX" src={nxcX} alt="nxc" />
       </article>
     </div>

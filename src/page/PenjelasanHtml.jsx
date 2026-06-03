@@ -46,7 +46,7 @@ export default function PenjelasanHtml() {
 
         <article className="sec1h2">
            <section className="scn1">
-            <img className="imgsec1h2" src={code1} alt="html" />
+            <img src={code1} alt="html" />
           <p>
             Itu adalah struktur dasar HTML yang membentuk kerangka halaman.
             Setiap elemen HTML memiliki fungsi khusus, seperti paragraf, judul,

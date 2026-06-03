@@ -41,27 +41,6 @@
   border-radius: 0.7vw;
 }
 
-.section2v {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 3vw;
-  margin-bottom: 5vw;
-  background-image: url(../../img/bg15.jpeg);
-  height: 30vw;
-  background-size: cover;
-  border-top: 0.3vw solid gold;
-  border-bottom: 0.3vw solid gold;
-}
-
-.nxcsection2 {
-  width: 15%;
-  border: 0.2vw solid gold;
-  border-radius: 2vw;
-}
-
 .des2v {
   display: flex;
   align-items: center;
@@ -74,16 +53,6 @@
   text-align: center;
   color: white;
   width: 60%;
-}
-
-.des2v button {
-  padding: 1.5vw;
-  border: 0.2vw solid gold;
-  background: var(--color4);
-  width: 50%;
-  border-radius: 0.5vw;
-  font-size: 1.2rem;
-  color: var(--color5);
 }
 
 .box2s2 {
@@ -211,29 +180,12 @@
     height: 60vw;
   }
 
-  .nxcsection2 {
-    width: 25%;
-    border: 0.2vw solid gold;
-    border-radius: 2vw;
-    margin-left: 4vw;
-  }
 
   .des2v p {
     text-align: center;
     color: white;
     width: 90%;
   }
-
-  .des2v button {
-    padding: 2vw;
-    border: 0.5vw solid gold;
-    background: var(--color4);
-    width: 60%;
-    border-radius: 1vw;
-    font-size: 1rem;
-    color: var(--color5);
-  }
-
   
 .imgf{
  width: 70%;

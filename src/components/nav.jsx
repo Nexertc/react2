@@ -42,27 +42,35 @@ export default function Nav({ class1 }) {
   return (
     <div className="nav">
       <nav className={class1}>
-        <button className="side-menu-btn" onClick={klik}>
+        <button className="side-menu-btn" aria-label="menu"
+         onClick={klik}>
           <Menu className="icon1" />
         </button>
 
       <h1 className="judulnxc">Ardeva <span>Alghifari</span>.</h1>
 
         <div className="containerlink">
+             <a
+            className="link1 blog"
+            href="#form"
+          >
+         Form
+          </a>
           <a
             className="link1 blog"
             href="https://ardevaalghifari.blogspot.com/"
           >
-            <h4>Blog</h4>
+          Blog
           </a>
           <a className="link1" href="https://sociabuzz.com/ardevanxc/tribe">
-            <h4>Dukungan</h4>
+           Dukungan
           </a>
           <a className="link1" href="#sec1">
-            <h4>Nexertc</h4>
+           Nexertc
           </a>
         </div>
-        <button className="theme-btn" onClick={toggleTheme}>
+        <button className="theme-btn" aria-label="ganti tema"
+         onClick={toggleTheme}>
           {darkMode ? (
             <Sun className="sun" />
           ) : (
@@ -76,6 +84,7 @@ export default function Nav({ class1 }) {
           <a href="https://ardevaalghifari.blogspot.com/">Blog</a>
           <a href="https://sociabuzz.com/ardevanxc/tribe">Dukungan</a>
           <a href="#">Nexertc</a>
+          <a href="#form">Form</a>
         </nav>
       </aside>
 

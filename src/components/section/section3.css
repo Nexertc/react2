@@ -163,6 +163,10 @@ color: var(--still2);
     height: 60vw;
   }
 
+  .lokasi  section{
+    padding-bottom: 10vw;
+  }
+
   /* =========== FORM =========== */
 
   .form-container{

@@ -32,7 +32,7 @@ export default function Header() {
           <section className="imgd1 fade-up">
             <div className="imglz">
               <figure className="img1">
-                <h1 className="h2img1">Ardeva <span>Alghifari</span>.</h1>
+                <h2 className="h2img1">Ardeva <span>Alghifari</span>.</h2>
               </figure>
               <img className="nxc" src={nxc} alt="nxc" />
               <div className="overlay"></div>
@@ -66,15 +66,18 @@ export default function Header() {
 
 
 
-                <a href="https://www.instagram.com/avealgh?igsh=MTc5Z2dtMWtkMzFsbQ==" className="img2">
+                <a href="https://www.instagram.com/avealgh?igsh=MTc5Z2dtMWtkMzFsbQ==" 
+                className="img2" aria-label="instagram">
                    <Instagram className="icon2 " />
                 </a>
 
-                <a href="" className="img2">
+                <a href="" 
+                className="img2" aria-label="youtube">
                    <Youtube className="icon2 " />
                 </a>
 
-                  <a href="https://github.com/Nexertc" className="img2">
+                  <a href="https://github.com/Nexertc"
+                   className="img2" aria-label="github">
                    <GitHub className="icon2 " />
                 </a>
            
@@ -82,6 +85,7 @@ export default function Header() {
                 className="img2"
                 src={tiktok}
                 alt="tiktok"
+                aria-label="tiktok"
                 onClick={() =>
                   bukaLink(
                     "https://www.tiktok.com/@nexertc?_r=1&_t=ZS-91lu3QryLqh",

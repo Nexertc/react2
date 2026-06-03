@@ -40,7 +40,7 @@ export default function Form() {
   }
 };
   return (
-   <div className="form-container">
+   <div className="form-container" id="form">
  
  <article>
   <div className="imgform"></div>
