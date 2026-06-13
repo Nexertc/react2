@@ -27,7 +27,9 @@ export default function Header() {
   return (
     <div>
       <header>
-        <Nav class1="navigasi" />
+        <Nav class1="navigasi"
+        nexertc="#sec1" 
+        form="#form"/>
         <article className="cns">
           <section className="imgd1 fade-up">
             <div className="imglz">

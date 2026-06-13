@@ -88,14 +88,15 @@ export default function Section1() {
               <h3 className="h3ex">Exlusif ICTGIS</h3>
             </article>
 
-            <article className="imgdes2 fade-up">
+            <article className="imgdes2 fade-up"  onClick={() => 
+              navigate("/Kirim")}>             
               <figure>
                 <img className="imgs1" src={twebsite} alt="website" />
               </figure>
-              <h3 className="heading3">Website</h3>
+              <h3 className="heading3">Kirim Gambar</h3>
               <p className="paragraft1">
-                Mampu membuat dan mengembangkan website sederhana hingga
-                dinamis.
+               Kirimgambar anda untuk Developer website ini 
+               jika diperlukan
               </p>
               <footer>
                 <img src={nxc} alt="nexertc" className="nxcs1" />

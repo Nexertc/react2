@@ -3,7 +3,7 @@ import App from "../App";
 import App2 from "../App2";
 import Htmljs from "../page/Htmljs";
 import PenjelasanHtml from "../page/PenjelasanHtml";
-
+import Kirim from "../page/Kirim";
 
 function Router() {
 return (
@@ -13,6 +13,7 @@ return (
           <Route path="/app2" element={<App2 />} />
           <Route path="/Htmljs" element={<Htmljs />} />
           <Route path="/penjelasan-html" element={<PenjelasanHtml />} />
+          <Route path="/Kirim" element={<Kirim />} />
         </Routes>
 </div>
 );

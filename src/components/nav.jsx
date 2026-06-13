@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Menu } from "react-feather";
 import { Moon, Sun } from "react-feather";
 
-export default function Nav({ class1 }) {
+export default function Nav({ class1, form, nexertc }) {
   const [open, setOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(() => {
     if (typeof window === "undefined") return false;
@@ -52,7 +52,7 @@ export default function Nav({ class1 }) {
         <div className="containerlink">
              <a
             className="link1 blog"
-            href="#form"
+            href={form}
           >
          Form
           </a>
@@ -65,7 +65,7 @@ export default function Nav({ class1 }) {
           <a className="link1" href="https://sociabuzz.com/ardevanxc/tribe">
            Dukungan
           </a>
-          <a className="link1" href="#sec1">
+          <a className="link1" href={nexertc}>
            Nexertc
           </a>
         </div>

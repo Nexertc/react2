@@ -1,0 +1,43 @@
+
+.artcardeva{
+  display: flex;
+  flex: 1.4;
+  position: relative;
+}
+
+
+.imgform{
+  background-image: url('../img/coc7.jpeg');
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 222;
+}
+
+.h6ardeva{
+  color: var(--color1);
+  position: absolute;
+  z-index: 224;
+  font-size: 2rem;
+}
+
+.h6ardeva span{
+color: var(--still2);
+}
+
+.overlayform{
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: 40%;
+  z-index: 223;
+}
+
+@media(max-width:768px){
+    
+  .artcardeva{
+    flex: none;
+    height: 50vw;
+  }
+}

@@ -62,12 +62,6 @@
   gap: 3vw;
 }
 
-.form-container article{
-  display: flex;
-  flex: 1.4;
-  position: relative;
-}
-
 .form-container form {
   display: flex;
   flex-direction: column;
@@ -125,35 +119,6 @@
   transform: translateY(-0.15rem);
 }
 
-.imgform{
-  background-image: url('../../img/coc7.jpeg');
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: 222;
-}
-
-.form-container article h6{
-  color: var(--color1);
-  position: absolute;
-  z-index: 224;
-  font-size: 2rem;
-}
-
-.form-container article h6 span{
-color: var(--still2);
-}
-
-.overlayform{
-  position: absolute;
-  inset: 0;
-  background: black;
-  opacity: 40%;
-  z-index: 223;
-}
-
-
 @media (max-width: 768px){
   .lokasi{
     flex-direction: column;
@@ -174,11 +139,6 @@ color: var(--still2);
     height: auto;
     padding-right: 0;
     padding-bottom: 3vw;
-  }
-
-  .form-container article{
-    flex: none;
-    height: 50vw;
   }
  
   .form-container form{

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Ardevabg from "./Ardevabg";
 
 export default function Form() {
   const [username, setUsername] = useState("");
@@ -42,11 +43,7 @@ export default function Form() {
   return (
    <div className="form-container" id="form">
  
- <article>
-  <div className="imgform"></div>
-  <h6>Ardeva <span>Alghifari</span>.</h6>
-  <div className="overlayform"></div>
- </article>
+ <Ardevabg />
 
   <form onSubmit={handleSubmit}>
     <h6>Masukan Saran anda:</h6>
