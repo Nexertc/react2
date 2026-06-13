@@ -5,7 +5,7 @@ import nxc from "../img/nxc2.png";
 
 export default function Footer() {
   return(
-     <footer className="imgfooter">
+     <footer className="imgfooter" id="footer1">
 
   <div className="footer-header">
     <img className="nxcfooter" src={nxc} alt="Logo Nexertc" />

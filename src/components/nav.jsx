@@ -50,6 +50,7 @@ export default function Nav({ class1, form, nexertc }) {
       <h1 className="judulnxc">Ardeva <span>Alghifari</span>.</h1>
 
         <div className="containerlink">
+          
              <a
             className="link1 blog"
             href={form}

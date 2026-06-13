@@ -135,7 +135,7 @@ main {
 }
 
 .imgd1 {
-  flex: 1;
+ width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,10 +171,9 @@ main {
 }
 
 .des {
-  flex: 1;
+  width: 50%;
   display: flex;
   flex-direction: column;
-
   text-align: justify;
   border: 0.15vw solid var(--color1);
   padding: 2vw;
@@ -226,20 +225,32 @@ main {
 .btnmedia:hover {
   background: var(--color1);
   color: white;
-  border: 0.2vw solid var(--color3);
 }
 
 .popup {
+  display: grid;
+  grid-template-columns: repeat(1 1fr);
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: var(--color1);
-  width: 30%;
-  height: 30vw;
-  z-index: 1000;
-  border: 0.2vw solid var(--color3);
+  background: var(--color4);
+  width: 40%;
+ padding: 2vw;
+  z-index: 9000;
+  border: 0.2vw solid var(--color1);
   border-radius: 0.7vw;
+  gap: 1vw;
+}
+
+.popup a{
+  padding: 1vw;
+  background: var(--color1);
+  color: var(--color4);
+  border-radius: 0.4vw;
+  border: 0.15vw solid var(--color1);
+  text-align: center;
+  text-decoration: none;
 }
 
 .overlaypopup {
@@ -250,7 +261,7 @@ main {
   height: 100%;
   background: var(--still1);
   opacity: 50%;
-  z-index: 999;
+  z-index: 8000;
 }
 
 .nxcX {

@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 9vw;
+  padding-top: 11vw;
 }
 
 .upload-box {
@@ -23,12 +23,14 @@
 
 .title {
   font-size: 1.3rem;
+  color: var(--color1);
 }
 
 .form {
  flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 2vw;
   padding: 3vw;
 }

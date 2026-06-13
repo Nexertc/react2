@@ -10,13 +10,14 @@ import { useState, useEffect } from "react";
 import Nav from "../components/nav";
 import "../components/nav.css";
 import { Youtube, GitHub, Instagram } from "react-feather";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+const Navigate = useNavigate();
+
   function bukaLink(url) {
     window.open(url, "_blank");
   }
-  
-
   const [showPopup, setShowPopup] = useState(false);
 
   function klikmedia() {
@@ -27,14 +28,14 @@ export default function Header() {
   return (
     <div>
       <header>
-        <Nav class1="navigasi"
-        nexertc="#sec1" 
-        form="#form"/>
+        <Nav class1="navigasi" nexertc="#sec1" form="#form" />
         <article className="cns">
           <section className="imgd1 fade-up">
             <div className="imglz">
               <figure className="img1">
-                <h2 className="h2img1">Ardeva <span>Alghifari</span>.</h2>
+                <h2 className="h2img1">
+                  Ardeva <span>Alghifari</span>.
+                </h2>
               </figure>
               <img className="nxc" src={nxc} alt="nxc" />
               <div className="overlay"></div>
@@ -44,7 +45,7 @@ export default function Header() {
               <Button teks="Open Page" className="btnabout" href="#sec1" />
 
               <Button
-                teks="Kunjungi media"
+                teks="Portal Halaman"
                 className="btnabout btnmedia"
                 tujuan={klikmedia}
                 href="#"
@@ -52,7 +53,9 @@ export default function Header() {
             </section>
           </section>
           <section className="des fade-up">
-            <h2>Ardeva <span>Alghifari</span>.</h2>
+            <h2>
+              Ardeva <span>Alghifari</span>.
+            </h2>
             <p>
               Website ini dibuat menggunakan library bernama <b>React JS</b> dan
               tols bernama
@@ -60,29 +63,31 @@ export default function Header() {
               sekolah SMK Geo Informatika, dan lulusan dari SMP Negeri 01
               Dramaga lahir pada 28 mei 2009 di Sragen Jawa Tengah. Jika ada
               keperluan dengan saya bisa kunjungi media sosial saya di bawah
-              ini. 
-              
+              ini.
             </p>
             <figure className="imgd2">
               <img className="img2" src={clan} alt="clan" />
 
+              <a
+                href="https://www.instagram.com/avealgh?igsh=MTc5Z2dtMWtkMzFsbQ=="
+                className="img2"
+                aria-label="instagram"
+              >
+                <Instagram className="icon2 " />
+              </a>
 
+              <a href="" className="img2" aria-label="youtube">
+                <Youtube className="icon2 " />
+              </a>
 
-                <a href="https://www.instagram.com/avealgh?igsh=MTc5Z2dtMWtkMzFsbQ==" 
-                className="img2" aria-label="instagram">
-                   <Instagram className="icon2 " />
-                </a>
+              <a
+                href="https://github.com/Nexertc"
+                className="img2"
+                aria-label="github"
+              >
+                <GitHub className="icon2 " />
+              </a>
 
-                <a href="" 
-                className="img2" aria-label="youtube">
-                   <Youtube className="icon2 " />
-                </a>
-
-                  <a href="https://github.com/Nexertc"
-                   className="img2" aria-label="github">
-                   <GitHub className="icon2 " />
-                </a>
-           
               <img
                 className="img2"
                 src={tiktok}
@@ -96,13 +101,23 @@ export default function Header() {
               />
             </figure>{" "}
             {/* classname imgd2 */}
-             <img className="nxcX" src={nxc} alt="nxc" />
+            <img className="nxcX" src={nxc} alt="nxc" />
           </section>{" "}
           {/* classname des */}
         </article>{" "}
         {/* classname cns */}
       </header>
-      {showPopup && <div className="popup"> </div>}
+
+      {showPopup && (
+        <div className="popup">
+          <a href="#sec1" onClick={klikmedia}>Halaman Utama</a>
+          <a href="#form" onClick={klikmedia}>Saran</a>
+          <a href="#" onClick={() =>Navigate("/kirim")}>Kirim Gambar</a>
+          <a href="#footer1" onClick={klikmedia}>Footer</a>
+
+        </div>
+      )}
+
       {showPopup && <div onClick={klikmedia} className="overlaypopup"></div>}
     </div>
   );

@@ -65,9 +65,9 @@ const Navigate = useNavigate();
   <div className="container">
     <Nav class1="navigasi"
     nexertc="/"
-    form="#form"
+    form="#form2"
     />
-    <div className="upload-box">
+    <div className="upload-box" id="form2">
 
       <form className="form" onSubmit={handleSubmit}>
           <h2 className="title">Upload Foto ke Google Drive</h2>
@@ -103,9 +103,6 @@ const Navigate = useNavigate();
 <Ardevabg />
     </div>
 
-       <Form />
-       <br />
-       <br />
     <Footer />
   </div>
 );
