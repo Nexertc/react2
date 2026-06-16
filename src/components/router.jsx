@@ -4,6 +4,8 @@ import App2 from "../App2";
 import Htmljs from "../page/Htmljs";
 import PenjelasanHtml from "../page/PenjelasanHtml";
 import Kirim from "../page/Kirim";
+import Komentar from "../page/Komentar";
+
 
 function Router() {
 return (
@@ -14,6 +16,7 @@ return (
           <Route path="/Htmljs" element={<Htmljs />} />
           <Route path="/penjelasan-html" element={<PenjelasanHtml />} />
           <Route path="/Kirim" element={<Kirim />} />
+          <Route path="/Komentar" element={<Komentar />} />
         </Routes>
 </div>
 );

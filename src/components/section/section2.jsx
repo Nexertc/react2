@@ -43,7 +43,7 @@ export default function Section1() {
               </footer>
             </article>
 
-            <article className="imgdes2 fade-up">
+            <article className="imgdes2 fade-up" onClick={() => navigate("/Komentar")}>
               <figure>
                 <img className="imgs1" src={css} alt="css" />
               </figure>
