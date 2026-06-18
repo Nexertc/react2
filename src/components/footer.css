@@ -18,6 +18,7 @@
 .hr1{
     border: 0.1vw solid var(--color1);
     width: 99%;
+      border: none;
 }
 
 .deslink1{

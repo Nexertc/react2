@@ -430,10 +430,19 @@ main {
 }
 
 @media (min-width: 1500px) {
+   html{
+    font-size: 120%;
+  }
   .des {
     width: 40%;
   }
   /* .des p{
         font-size: clamp(1rem, 1.35vw, 2rem);
     } */
+}
+
+@media (min-width: 1900px){
+   html{
+    font-size: 150%;
+  }
 }

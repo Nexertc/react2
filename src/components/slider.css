@@ -82,8 +82,9 @@
 
 .hrS {
   width: 95%;
-  height: 0.15vw;
+  height: 0.1vw;
   background: var(--color1);
+    border: none;
 }
 
 

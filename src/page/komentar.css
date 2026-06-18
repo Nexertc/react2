@@ -1,20 +1,20 @@
 .komentar {
   width: 100%;
  min-height: 100vh;
-  padding-top: 8vw;
+  /* padding-top: 8vw; */
   display: flex;
   gap: 2%;
 }
 
 /* FORM KIRI */
 .komentar form {
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: 1vw;
   position: absolute;
-  left: 3vw;
+  left: 0;
   /* border: 0.15vw solid var(--color1); */
 }
 
@@ -51,7 +51,7 @@
 
 .komentar form button {
   width: 100%;
-  height: 3vw;
+ padding: 1.2vw;  
   font-size: 1rem;
   border: none;
   border-radius: 0.5vw;
@@ -62,50 +62,121 @@
 
 /* KOLOM KOMENTAR KANAN */
 .list-komentar {
-  width: 30%;
+  width: 55%;
   height: 80vh;
   display: flex;
   flex-direction: column;
   gap: 1vw;
   overflow-y: auto;
-margin-bottom: 5vw;
+/* margin-bottom: 5vw; */
   border-left: 0.15vw solid var(--color1);
-  padding-left: 2vw;
+  padding-left: 4vw;
+  position: relative;
 }
 
-/* SCROLLBAR */
-.list-komentar::-webkit-scrollbar {
-  width: 0.5vw;
-}
-
-.list-komentar::-webkit-scrollbar-thumb {
-  border-radius: 1vw;
-  background: #999;
+.list-komentar::-webkit-scrollbar{
+  display: none;
 }
 
 /* BUBBLE CHAT */
 .card-komentar {
  width: 100%;
-  min-height: 9vw;
-  padding: 1vw;
+ padding: 1vw;
   border-radius: 1vw;
-  background: #e9f5ff;
-  align-self: flex-start;
-  box-sizing: border-box;
+ border: 0.15vw solid var(--color1);
+ align-items: start;
+ position: relative;
 }
 
 .card-komentar h4 {
   font-size: 1rem;
   margin-bottom: 0.3vw;
+  color: var(--color5);
+  margin-top: 0;
 }
 
 .card-komentar p {
   font-size: 1rem;
-  margin-bottom: 0.5vw;
-  word-break: break-word;
+  margin-bottom: 0;
+  
+   color: var(--color5);
 }
 
-.card-komentar small {
-  font-size: 0.8rem;
-  opacity: 0.7;
+.card-komentar span{
+position: absolute;
+top: 0;
+right: 1vw;
+}
+
+.komentar .row1 form h6{
+  color: var(--color1);
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.list-komentar h6{
+  font-size: 1rem;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color1);
+  padding: 1vw 0 1vw 0;
+  color: var(--still2);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin-top: 0;
+  z-index: 999;
+  border-radius: 0.4vw;
+  gap: 2vw;
+  margin-bottom: 0.5vw;
+
+}
+
+@media (max-width: 768px){
+.komentar{
+  min-height: auto;
+  margin-top: 15vw;
+  margin-bottom: 10vw;
+}
+  .row1{
+    flex-direction: column-reverse;
+  }
+  .list-komentar{
+    width: 100%;
+  }
+
+  .row1 form{
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: 0;
+  }
+
+  .row1 form input{
+    padding: 3vw;
+  }
+
+  .row1 form button{
+    padding: 2vw;
+  }
+
+  .komentar textarea{
+    height: 20vw;
+  }
+.list-komentar{
+  height: 70vw;
+  border-left: none;
+  padding-left: 0;
+}
+.list-komentar h6{
+  padding: 4vw 0 4vw 0;
+  border-radius: 1.2vw;
+  margin-bottom: 1vw;
+}
+
+.list-komentar .card-komentar{
+  z-index: 888;
+}
+
 }

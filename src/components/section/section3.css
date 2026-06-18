@@ -119,6 +119,14 @@
   transform: translateY(-0.15rem);
 }
 
+.hrs2{
+  height: 0.1vw;
+  background: var(--color1);
+  width: 100%;
+  margin-top: 5vw;
+  border: none;
+}
+
 @media (max-width: 768px){
   .lokasi{
     flex-direction: column;
@@ -144,5 +152,8 @@
   .form-container form{
     flex: none;
     padding: 3vw;
+  }
+  .hrs2{
+    margin-top: 15vw;
   }
 }

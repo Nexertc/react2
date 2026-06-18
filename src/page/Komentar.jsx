@@ -1,8 +1,8 @@
 import "./komentar.css";
 import { useEffect, useState } from "react";
-import Nav from "../components/nav";
-import Footer from "../components/footer";
-
+import {MessageCircle} from "react-feather"
+// import Nav from "../components/nav";
+// import Footer from "../components/footer";
 
 export default function Komentar() {
   const [nama, setNama] = useState("");
@@ -44,39 +44,43 @@ export default function Komentar() {
   }, []);
 
   return (
-   <section className="komentar">
-    <Nav class1="navigasi" />
-  <div className="row1">
-    <form onSubmit={kirimKomentar}>
-    <input
-      type="text"
-      placeholder="Nama"
-      value={nama}
-      onChange={(e) => setNama(e.target.value)}
-      required
-    />
+    <section className="komentar">
+      <div className="row1">
+        <form onSubmit={kirimKomentar}>
+          <h6>Tambahkan Komentar</h6>
+          <input
+            type="text"
+            placeholder="Nama"
+            value={nama}
+            onChange={(e) => setNama(e.target.value)}
+            required
+          />
 
-    <textarea
-      placeholder="Tulis komentar..."
-      value={pesan}
-      onChange={(e) => setPesan(e.target.value)}
-      required
-    />
+          <textarea
+            placeholder="Tulis komentar..."
+            value={pesan}
+            onChange={(e) => setPesan(e.target.value)}
+            required
+          />
 
-    <button type="submit">Kirim</button>
-  </form>
+          <button type="submit">Kirim</button>
+          
+          
+        </form>
 
-  <div className="list-komentar">
-    {komentar.map((item, index) => (
-      <article key={index} className="card-komentar">
-        <h4>{item.nama}</h4>
-        <p>{item.pesan}</p>
-        
-      </article>
-    ))}
-  </div>
-  </div>
-  <Footer />
-</section>
+       <div className="list-komentar">
+        <h6>Daftar Komentar <MessageCircle /></h6>
+          {komentar.map((item, index) => (
+            <article key={index} className="card-komentar">
+              <h4>{item.nama}</h4>
+              <p>{item.pesan}</p>
+              <span>
+                <p>{item.tanggal}</p>
+              </span>
+            </article> 
+          ))}
+        </div> 
+      </div>
+    </section>
   );
 }

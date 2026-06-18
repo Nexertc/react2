@@ -170,10 +170,11 @@ figure {
 }
 
 .hrs1{
-  height: 0.2vw;
+  height: 0.1vw;
   background: var(--color1);
   width: 90%;
   margin-bottom: 3vw;
+    border: none;
 }
 
 @media (max-width: 768px) {

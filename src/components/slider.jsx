@@ -60,7 +60,7 @@ export default function Slider() {
       , "https://figma.com"],
     [
       <>
-        GitHub Profile <GitHub className="iconS" />
+        GitHub <GitHub className="iconS" />
       </>,
       "https://github.com/Nexertc",
     ],

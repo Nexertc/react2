@@ -1,6 +1,7 @@
 import "./section3.css";
 import { MapPin } from "react-feather";
 import Form from "../Form";
+import Komentar from "../../page/Komentar";
 
 export default function Section3() {
   return (
@@ -31,6 +32,8 @@ export default function Section3() {
     </div>
 
 <Form />
+<hr className="hrs2" />
+<Komentar />
 
     </div>
   );
