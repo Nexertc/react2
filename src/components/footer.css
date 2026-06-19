@@ -16,8 +16,9 @@
 }
 
 .hr1{
-    border: 0.1vw solid var(--color1);
-    width: 99%;
+   height: 0.1vw;
+   background: var(--color1);
+    width: 100%;
       border: none;
 }
 

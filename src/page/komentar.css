@@ -1,6 +1,6 @@
 .komentar {
   width: 100%;
- min-height: 100vh;
+
   /* padding-top: 8vw; */
   display: flex;
   gap: 2%;
@@ -63,7 +63,6 @@
 /* KOLOM KOMENTAR KANAN */
 .list-komentar {
   width: 55%;
-  height: 80vh;
   display: flex;
   flex-direction: column;
   gap: 1vw;
@@ -144,6 +143,7 @@ right: 1vw;
   }
   .list-komentar{
     width: 100%;
+    height: 80vh;
   }
 
   .row1 form{
