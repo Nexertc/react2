@@ -34,7 +34,6 @@ export default function Section3() {
 <Form />
 <hr className="hrs2" />
 <Komentar />
-
     </div>
   );
 }

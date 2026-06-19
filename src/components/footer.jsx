@@ -2,11 +2,12 @@ import React from "react";
 import "./footer.css";
 import footerimg from "../img/footerimg.jpeg"
 import nxc from "../img/nxc2.png";
+import img1 from "../img/file1.svg"
 
 export default function Footer() {
   return(
      <footer className="imgfooter" id="footer1">
-
+<img className="imgfooter2" src={img1} alt="" />
   <div className="footer-header">
     <img className="nxcfooter" src={nxc} alt="Logo Nexertc" />
     <hr className="hr1" />
