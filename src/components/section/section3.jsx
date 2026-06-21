@@ -14,13 +14,13 @@ export default function Section3() {
       <article>
         <h5>
           {" "}
-          <span>
+          
             <MapPin className="MapPin" />
-          </span>{" "}
+        
           Lokasi Sekolah saya{" "}
-          <span>
+       
             <MapPin className="MapPin" />
-          </span>
+         
         </h5>
         <section>
           <p>

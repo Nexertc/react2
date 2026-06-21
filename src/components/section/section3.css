@@ -11,7 +11,6 @@
   flex-direction: row;
   justify-content: center;
   width: 90%;
-  margin-bottom: 3vw;
   gap: 3vw;
 }
 
@@ -33,27 +32,39 @@
 }
 
 .lokasi article h5{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--color1);
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.lokasi article h5 .MapPin{
+  color: var(--color5);
 }
 
 .lokasi article p{
     text-align: justify;
     width: 90%;
+    font-size: 1.2rem;
 }
 
-.lokasi article h5 span{
-    color: var(--color5);
-}
 
 
 /* FORM JSX */
 
+.form1{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6vw;
+}
+
 .form-container {
   display: flex;
-
-  width: 90%;
   height: 30vw;
+  width: 90%;
   background: var(--color4);
   border-radius: 1rem;
   border: 0.1vw solid var(--color1);
@@ -142,6 +153,10 @@
 
   /* =========== FORM =========== */
 
+  .form1{
+    padding-top: 16vw;
+  }
+
   .form-container{
     flex-direction: column;
     height: auto;
@@ -156,4 +171,8 @@
   .hrs2{
     margin-top: 15vw;
   }
+  .section3 article p{
+    margin-top: 0;
+  }
+
 }

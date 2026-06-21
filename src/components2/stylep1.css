@@ -57,7 +57,7 @@
 align-items: center;
 justify-content: start;
 flex-direction: column;
-  height: 40vw;      /* tinggi tetap */
+height: 40vw;
   overflow-y: auto;  /* scroll vertikal */
 }
 
@@ -145,13 +145,46 @@ flex-direction: column;
 }
 
 .garis1 {
-  height: 0.21vw;
+  height: 0.1vw;
   width: 95%;
   background: var(--color1);
   margin: 0;
+  border: none;
+}
+
+.btnmateri{
+  position: fixed;
+  bottom: 2vw;
+  left: 2vw;
+  z-index: 9999;
+  background: var(--color1);
+  font-size: 1rem;
+  padding: 1vw 2.5vw 1vw 2.5vw;
+  border: 0.15vw solid var(--still2);
+  color: var(--still2);
+  border-radius: 0.4vw;
+}
+
+.divcenter{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.divcenter2{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
+  
+.divcenter{
+  align-items: center;
+}
+
   .cosh1 {
     align-items: center;
     justify-content: center;

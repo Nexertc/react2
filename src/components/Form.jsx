@@ -41,8 +41,9 @@ export default function Form() {
   }
 };
   return (
-   <div className="form-container" id="form">
- 
+   <div className="form1" id="form">
+ <div className="form-container">
+  
  <Ardevabg />
 
   <form onSubmit={handleSubmit}>
@@ -75,6 +76,7 @@ export default function Form() {
   {success ? "Berhasil Dikirim ✓" : "Kirim"}
 </button>
   </form>
+ </div>
 </div>
   );
 }
