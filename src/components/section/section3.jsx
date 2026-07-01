@@ -2,6 +2,7 @@ import "./section3.css";
 import { MapPin } from "react-feather";
 import Form from "../Form";
 import Komentar from "../../page/Komentar";
+import nxc2 from "../../img/nxc2.png";
 
 export default function Section3() {
   return (
@@ -27,6 +28,7 @@ export default function Section3() {
             Negara Indonesia, provinsi Jawa Barat, kabupaten Bogor, kecamatan
             Ciampea.
           </p>
+<img src={nxc2} alt="nxc2" />
         </section>
       </article>
     </div>

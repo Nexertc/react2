@@ -1,0 +1,95 @@
+.popup {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--color4);
+    width: 85%;
+    height: 85vh;
+    padding: 2vw;
+    z-index: 9000;
+    border: 0.2vw solid var(--color1);
+    border-radius: 0.7vw;
+  overflow-y: auto;
+  padding-top: 5vw;
+}
+
+.popup::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+.popup::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background: var(--color1);
+  border-radius: 10rem;
+}
+
+.popup::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}
+
+.gridpopup{
+     gap: 1vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.itempopup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 0.1vw solid var(--color1);
+  border-radius: 0.7vw;
+  overflow: auto;
+  padding-bottom: 4vw;
+  position: relative;
+  
+}
+
+.itempopup .imgp1 {
+  width: 100%;
+  border-bottom: 0.1vw solid var(--color1);
+  height: 16vw;
+  object-fit: cover;
+}
+
+.itempopup .imgp2{
+  width: 13%;
+  position: absolute;
+  right: 1vw;
+  bottom: 1vw;
+}
+
+.itempopup h3 {
+  color: var(--color1);
+  font-size: 1.2rem;
+  width: 80%;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.itempopup p {
+  color: var(--color5);
+  width: 80%;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+.btnclose{
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 888;
+    background: var(--color1);
+    border: none;
+}
+
+.popupx{
+    color: white;
+}

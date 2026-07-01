@@ -29,6 +29,7 @@
   flex: 1;
   border: 0.1vw solid var(--color1);
   border-radius: 1.2vw;
+  position: relative;
 }
 
 .lokasi article h5{
@@ -47,9 +48,15 @@
     text-align: justify;
     width: 90%;
     font-size: 1.2rem;
+    text-indent: 2rem;
 }
 
-
+.lokasi article img{
+  width: 12%;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
 
 /* FORM JSX */
 

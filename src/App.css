@@ -6,19 +6,13 @@
 
   --still1: #0f172acc;
   --still2: white;
-  --still3:#1b1b1c;
+  --still3: #1b1b1c;
 
-  --font1: Arial, sans-serif;
-  --font2: Arial, Helvetica, sans-serif;
-  --font3: unset;
-  --font4: inherit;
-  --font5: monospace;
   --fontp: "Poppins", sans-serif;
 }
 
 * {
   box-sizing: border-box;
-  
 }
 
 html {
@@ -72,7 +66,7 @@ main {
 
 .img1 {
   width: 100%;
-  height: 23vw;
+  height: 23rem;
   background-image: url("img/coc7.jpeg");
   background-position: center;
   background-size: cover;
@@ -89,16 +83,15 @@ main {
 .img2 {
   width: 9%;
   display: flex;
-  
 }
- .icon2{
+.icon2 {
   width: 100%;
   height: 100%;
   color: var(--color5);
-   stroke-width: 1.5;
+  stroke-width: 1.5;
 }
 
-.icon2:hover{
+.icon2:hover {
   color: var(--color1);
 }
 
@@ -136,12 +129,12 @@ main {
 }
 
 .imgd1 {
- width: 50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 32vw;
+  height: 25rem;
 }
 
 .imgd2 {
@@ -167,7 +160,7 @@ main {
   text-align: center;
 }
 
-.cns .des h2 span{
+.cns .des h2 span {
   color: var(--color5);
 }
 
@@ -177,15 +170,15 @@ main {
   flex-direction: column;
   text-align: justify;
   border: 0.15vw solid var(--color1);
-  padding: 2vw;
+  padding: 1.4rem;
   border-radius: 1.2vw;
-  height: 32vw;
+  height: 25rem;
   position: relative;
 }
 
 .des p {
   text-indent: 1.5rem;
-  font-size: clamp(0.9rem, 1vw, 2rem);
+ font-size: 1rem;
 }
 
 .cnsbtn {
@@ -228,23 +221,7 @@ main {
   color: white;
 }
 
-.popup {
-  display: grid;
-  grid-template-columns: repeat(1 1fr);
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: var(--color4);
-  width: 40%;
- padding: 2vw;
-  z-index: 9000;
-  border: 0.2vw solid var(--color1);
-  border-radius: 0.7vw;
-  gap: 1vw;
-}
-
-.popup a{
+.popup a {
   padding: 1vw;
   background: var(--color1);
   color: var(--color4);
@@ -285,11 +262,71 @@ main {
   transform: translateY(0);
 }
 
-@media (max-width: 768px) {
+@media(min-width:1500px){
+  html{
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 1100px) {
   html {
+    font-size: 100%;
+  }
+  .konten{
+    margin-top: 15vw;
+  }
+  .cns {
+    width: 95%;
+  }
+
+  .imgd1, .des {
+    height: 25rem;
+  }
+ 
+  .img1 {
+    height: 50rem;
+  }
+
+} 
+
+
+@media (max-width:900px){
+  html{
+    font-size: 90%;
+  }
+}
+
+@media(max-width: 768px){
+  html{
     font-size: 80%;
   }
-  .konten {
+  .konten{
+    margin-top: 10vw;
+  }
+  
+  .cns {
+    margin-top: 5vw;
+  }
+.img1{
+  height: 20rem;
+}
+  .cns .des h2 {
+    margin-bottom: 1vw;
+  }
+  .imgd1, .des{
+    height: 22rem;
+  }
+  .des p{
+    font-size: 85%;
+  }
+
+}
+
+@media (max-width:576px){
+  html{
+    font-size: 100%;
+  }
+ .konten {
     margin-top: 0;
   }
 
@@ -308,9 +345,8 @@ main {
 
   .h2img1 {
     color: var(--still2);
-    /* font-size: 1.5rem; */
     position: absolute;
-    top: 50vw;
+    top: 55vw;
     z-index: 998;
     display: block;
   }
@@ -318,9 +354,6 @@ main {
     color: var(--color1);
   }
 
-  .img2 {
-    width: 10%;
-  }
 
   .nxc {
     width: 70%;
@@ -333,6 +366,68 @@ main {
     position: absolute;
     top: 70vw;
     gap: 3vw;
+  }
+
+  .btnabout {
+    border: 0.35vw solid white;
+    padding: 3.5vw;
+    margin-top: 3vw;
+    border-radius: 1vw;
+    width: 38%;
+  }
+  .btnmedia {
+    border: 0.35vw solid white;
+    color: white;
+  }
+
+  .btnmedia:hover {
+    background: #4e95ff;
+    border: 0.35vw solid white;
+  }
+
+  .imgd1 {
+    width: 100%;
+    margin-top: 8vw;
+    height: auto;
+  }
+
+  .cns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw;
+    width: 100%;
+  }
+
+  .cns .des h2 {
+    margin-bottom: 1vw;
+    margin-top: 10vw;
+  }
+
+  .des {
+    width: 95%;
+    margin-top: 5vw;
+    height: auto;
+    border-radius: 4vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-bottom: 13vw;
+  }
+  .cnsbtn {
+    width: 50%;
+  }
+  .imgd2 {
+    gap: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+
+  .h2img1 {
+    top: 50vw;
   }
 
   .btnabout {
@@ -399,51 +494,6 @@ main {
 
 }
 
-@media (min-width: 769px) and (max-width: 1100px) {
-  html{
-    font-size: 90%;
-  }
-  .cns {
-    width: 95%;
-  }
 
-  .des {
-    width: 70%;
-    height: 44vw;
-  }
-  /* 
-.des p{
-     font-size:  clamp(0.9rem, 1.8vw, 2rem);
-} */
 
-  .img1 {
-    height: 35vw;
-  }
 
-  .imgd1 {
-    height: 44vw;
-    width: 70%;
-  }
-
-  .nxcX {
-    display: none;
-  }
-}
-
-@media (min-width: 1500px) {
-   html{
-    font-size: 120%;
-  }
-  .des {
-    width: 40%;
-  }
-  /* .des p{
-        font-size: clamp(1rem, 1.35vw, 2rem);
-    } */
-}
-
-@media (min-width: 1900px){
-   html{
-    font-size: 150%;
-  }
-}

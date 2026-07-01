@@ -57,7 +57,7 @@ export default function Slider() {
       <>
       Figma <Figma className="iconS" />
       </>,
-      , "https://figma.com"],
+       "https://figma.com"],
     [
       <>
         GitHub <GitHub className="iconS" />

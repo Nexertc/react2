@@ -47,7 +47,7 @@ export default function Komentar() {
     <section className="komentar">
       <div className="row1">
         <form onSubmit={kirimKomentar}>
-          <h6>Tambahkan Komentar</h6>
+          <h6>  <MessageCircle />Tambahkan Komentar</h6>
           <input
             type="text"
             placeholder="Nama"

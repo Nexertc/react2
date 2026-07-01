@@ -6,7 +6,6 @@ import css from "../../img/css.png";
 import js from "../../img/javascript.png";
 import twebsite from "../../img/twebsite.jpg";
 import reactimg from "../../img/react.png";
-import figma from "../../img/figma.png";
 import nxc from "../../img/nxc2.png";
 import btnjs from "../../img/btnjs.jpg";
 
@@ -123,7 +122,7 @@ export default function Section1() {
 
             <article className="imgdes2 fade-up">
               <figure>
-                <img className="imgs1" src={figma} alt="figma" />
+                <img className="imgs1" src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/b8d00b2e389e3a38f115ea00f7dc3dff3ef4f337/dbc32aa496f21ffa8508a4f6432d1e6c6f76e3b1" alt="figma" />
               </figure>
               <h3 className="heading3">Figma</h3>
               <p className="paragraft1">

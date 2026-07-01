@@ -6,11 +6,13 @@ import github from "../img/github.png";
 import yt from "../img/yt.png";
 import tiktok from "../img/tiktokrm.png";
 import nxc from "../img/nxc2.png";
+import html5 from "../img/html5.jpg";
 import { useState, useEffect } from "react";
 import Nav from "../components/nav";
 import "../components/nav.css";
 import { Youtube, GitHub, Instagram } from "react-feather";
 import { useNavigate } from "react-router-dom";
+import Popup from "./Popup";
 
 export default function Header() {
 const Navigate = useNavigate();
@@ -109,13 +111,7 @@ const Navigate = useNavigate();
       </header>
 
       {showPopup && (
-        <div className="popup">
-          <a href="#sec1" onClick={klikmedia}>Halaman Utama</a>
-          <a href="#form" onClick={klikmedia}>Saran</a>
-          <a href="#" onClick={() =>Navigate("/kirim")}>Kirim Gambar</a>
-          <a href="#footer1" onClick={klikmedia}>Footer</a>
-
-        </div>
+        <Popup />
       )}
 
       {showPopup && <div onClick={klikmedia} className="overlaypopup"></div>}

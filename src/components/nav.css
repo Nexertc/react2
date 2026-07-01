@@ -51,6 +51,19 @@
 
 .side-menu-btn {
   display: none;
+    position: absolute;
+    right: 2vw;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 0.4vw;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.25s ease;
 }
 
 .side-menu {
@@ -137,11 +150,33 @@ height: 80%;
   color: var(--still2);
 }
 
-@media (max-width: 768px) {
-  .navigasi {
-    height: 15vw;
-  }
 
+
+@media (min-width: 768px) and (max-width: 1100px){
+  .navigasi{
+    height: 10vw;
+  }
+}
+
+
+@media (max-width: 1100px){
+  .navigasi{
+    height: 8vw;
+  }
+}
+
+
+@media(max-width: 768px){
+  .navigasi{
+    height: 10vw;
+  }
+}
+
+@media (max-width:576px){
+  .navigasi{
+    height: 18vw;
+  }
+ 
   .judulnxc {
     left: 4vw;
   }
@@ -166,20 +201,7 @@ height: 80%;
   }
 
   .side-menu-btn {
-    position: absolute;
-    right: 2vw;
-    height: 100%;
-    width: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    border: none;
-    border-radius: 0.4vw;
-    background: none;
-    cursor: pointer;
-    z-index: 1000;
-    transition: all 0.25s ease;
   }
 
   .side-menu-btn .icon1 {
@@ -217,11 +239,70 @@ height: 80%;
   }
 }
 
-@media (min-width: 1500px) {
+
+@media (max-width: 480px)  {
   .navigasi {
-    height: 4.5vw;
+    height: 15vw;
   }
+
+  .judulnxc {
+    left: 4vw;
+  }
+
+  .nxcnav {
+    border-radius: 1.5vw;
+    height: 85%;
+  }
+
+  .containerlink {
+    gap: 3vw;
+    right: 18vw;
+  }
+
+  .blog {
+    display: none;
+  }
+
   .link1 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    display: none;
+  }
+
+  .side-menu-btn {
+    display: flex;
+  }
+
+  .side-menu-btn .icon1 {
+    width: 80%;
+    height: 80%;
+    stroke-width: 2;
+  }
+
+  .side-menu {
+    width: 75vw; /* dari % → vw */
+    left: -100vw;
+    padding: 18vw 5vw;
+  }
+
+  .side-menu-open {
+    left: 0;
+  }
+
+  .side-menu-content {
+    gap: 3.5vw;
+  }
+
+  .side-menu-content a {
+    /* font-size: 1rem;  */
+    padding: 3vw 3.5vw;
+    border-radius: 2vw;
+  }
+
+  .side-menu-content a:active {
+    background: var(--color6);
+    transform: scale(0.98);
+  }
+  .theme-btn{
+    right: 16vw;
   }
 }

@@ -12,11 +12,26 @@
 
 .slider {
  width: 50%;
-  height: 35.5vw;
   overflow: hidden;
   border-radius: 20px;
   border: 0.12vw solid var(--color1);
   position: relative;
+}
+
+.containerS {
+  width: 50%;
+  border: 0.15vw solid var(--color1);
+  border-radius: 1.5vw;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: 2vw;
+  gap: 0.7rem;
+  position: relative;
+}
+
+.slider, .containerS{
+  height: 28rem;
 }
 
 .slides {
@@ -62,27 +77,16 @@
   border-radius: 20px;
 }
 
-.containerS {
-  width: 50%;
-  height: 35.5vw;
-  border: 0.15vw solid var(--color1);
-  border-radius: 1.5vw;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  padding: 2vw;
-  gap: 1vw;
-  position: relative;
-}
 
 .headingS {
-  margin-left: 1vw;
+  margin-left: 0.5rem;
   color: var(--color2);
+  margin-bottom: 0;
 }
 
 .hrS {
-  width: 95%;
-  height: 0.1vw;
+  width: 100%;
+  height: 0.07rem;
   background: var(--color1);
     border: none;
 }
@@ -93,6 +97,22 @@
   height: 100%;
 }
 
+
+@media(min-width:1500px){
+.hrS{
+  height: 0.1rem;
+}
+}
+
+@media (max-width:900px){
+  .kontenS{
+    width: 95%;
+  }
+  .slider, .containerS{
+    height: 25rem;
+  }
+}
+
 @media (max-width: 768px) {
   .kontenS{
     flex-direction: column;
@@ -100,7 +120,7 @@
   }
   .slider {
     flex: none;
-    height: 60vw;
+    height: 33rem;
     width: 95%;
     border-radius: 2vw;
     border: 0.5vw solid var(--color1);
@@ -119,20 +139,14 @@
 
 }
 
-@media (min-width: 769px) and (max-width: 1100px) {
-  .kontenS {
-    width: 95%;
-    flex-direction: column-reverse;
+
+@media (max-width:576px){
+  .slider{
+    height: 20rem;
   }
-  .containerS {
-    width: 90%;
-    height: auto;
+  .hrS{
+    height: 0.07rem;
+    border: none;
   }
-  .slider {
-    width: 90%;
-    height: 60vw;
-    flex: none;
-  }
-  
  
 }

@@ -14,6 +14,13 @@ export default function Form() {
   const handleSubmit = async (e) => {
   e.preventDefault();
 
+  
+    setSuccess(true);
+
+  setUsername("");
+  setPassword("");
+
+
   try {
     const response = await fetch(WEB_APP_URL, {
       method: "POST",
@@ -22,12 +29,12 @@ export default function Form() {
         password,
       }),
     });
+    
 
     const result = await response.text();
 
     console.log(result);
 
-    setSuccess(true);
 
     setUsername("");
     setPassword("");
