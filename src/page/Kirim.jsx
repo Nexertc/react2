@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./kirim.css";
 import Nav from "../components/nav"
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
-import Form from "../components/Form";
 import Ardevabg from "../components/Ardevabg";
+import Section1 from "../components/section/Section1";
 
 export default function Kirim() {
 const Navigate = useNavigate();
@@ -61,6 +61,31 @@ const Navigate = useNavigate();
     reader.readAsDataURL(file);
   };
 
+  
+    // fade up
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        const items = document.querySelectorAll(".fade-up");
+  
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          },
+        );
+  
+        items.forEach((item) => observer.observe(item));
+      }, 100);
+  
+      return () => clearTimeout(timer);
+    }, []);
+
  return (
   <div className="container">
     <Nav class1="navigasi"
@@ -102,7 +127,7 @@ const Navigate = useNavigate();
       </form>
 <Ardevabg />
     </div>
-
+<Section1 />
     <Footer />
   </div>
 );

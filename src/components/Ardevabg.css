@@ -38,6 +38,13 @@ color: var(--still2);
     
   .artcardeva{
     flex: none;
-    height: 50vw;
+    height: 27rem;
+  }
+}
+
+
+@media (max-width:576px){
+  .artcardeva{
+    height: 16rem;
   }
 }
