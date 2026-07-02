@@ -48,7 +48,7 @@
 .lokasi article p{
     text-align: justify;
     width: 90%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-indent: 2rem;
 }
 
@@ -183,4 +183,11 @@
     margin-top: 0;
   }
 
+}
+
+
+@media (max-width: 480px) {
+  .lokasi article{
+    padding-bottom: 3rem;
+  }
 }
